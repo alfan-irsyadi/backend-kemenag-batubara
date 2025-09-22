@@ -27,5 +27,34 @@
       "src": "/(.*)",
       "dest": "/api/index.js"
     }
+  ],
+  "functions": {
+    "api/search.js": {
+      "maxDuration": 10
+    }
+  },
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "functions": {
+        "api/search.js": {
+          "maxDuration": 10
+        }
+      },
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET, POST, PUT, DELETE, OPTIONS"
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "Content-Type, Authorization"
+        }
+      ]
+    }
   ]
 }

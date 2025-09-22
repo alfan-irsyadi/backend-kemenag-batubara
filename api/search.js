@@ -1,156 +1,199 @@
 import axios from "axios";
 import * as cheerio from "cheerio";
-import cors from "cors";
 
-const allowedOrigins = [
-    "http://localhost:5173",
-    "https://kemenag-batubara.vercel.app",
-    "https://backend-kemenag-batubara.vercel.app"
-];
-
-const corsMiddleware = cors({
-    origin: function (origin, callback) {
-        if (!origin) return callback(null, true);
-        if (allowedOrigins.includes(origin)) {
-            callback(null, true);
-        } else {
-            const isAllowed = allowedOrigins.some(allowedOrigin => 
-                origin.endsWith(allowedOrigin.replace("https://", "").replace("http://", ""))
-            );
-            if (isAllowed) {
-                callback(null, true);
-            } else {
-                callback(new Error("Not allowed by CORS"));
-            }
-        }
-    },
-    credentials: true,
-    optionsSuccessStatus: 200
-});
-
-// Cache to store recent searches (in-memory, resets on cold start)
-const searchCache = new Map();
-const CACHE_DURATION = 5 * 60 * 1000; // 5 minutes
+// Cache global untuk menyimpan hasil
+const cache = new Map();
+const CACHE_TTL = 5 * 60 * 1000; // 5 menit
 
 export default async function handler(req, res) {
-    // Apply CORS middleware
-    await new Promise((resolve, reject) => {
-        corsMiddleware(req, res, (err) => {
-            if (err) reject(err);
-            else resolve();
-        });
-    });
+    // Set CORS headers
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+    
+    if (req.method === 'OPTIONS') {
+        return res.status(200).end();
+    }
 
     if (req.method !== 'GET') {
         return res.status(405).json({ error: "Method not allowed" });
     }
 
+    const { keyword } = req.query;
+    
+    if (!keyword) {
+        return res.status(400).json({ error: "Keyword parameter is required" });
+    }
+
     try {
-        const keyword = req.query.keyword;
-        if (!keyword) {
-            return res.status(400).json({ error: "Keyword parameter is required" });
-        }
-
-        // Check cache first
-        const cacheKey = keyword.toLowerCase();
-        const cached = searchCache.get(cacheKey);
+        // Check cache
+        const cacheKey = keyword.toLowerCase().trim();
+        const cached = cache.get(cacheKey);
         
-        if (cached && Date.now() - cached.timestamp < CACHE_DURATION) {
-            console.log('Returning cached results for:', keyword);
-            return res.json(cached.data);
+        if (cached && Date.now() - cached.timestamp < CACHE_TTL) {
+            console.log('Cache hit for:', keyword);
+            return res.status(200).json({
+                success: true,
+                data: cached.data,
+                cached: true,
+                timestamp: cached.timestamp
+            });
         }
 
-        // Set timeout for the entire operation
-        const timeoutPromise = new Promise((_, reject) => {
-            setTimeout(() => reject(new Error('Request timeout')), 8000); // 8 second timeout
-        });
-
-        const searchPromise = axios.get(
-            `https://sumut.kemenag.go.id/beranda/list-pencarian?cari=${encodeURIComponent(keyword)}`,
-            {
-                headers: {
-                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
-                    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
-                    "Accept-Language": "id-ID,id;q=0.9,en;q=0.8",
-                    "Cache-Control": "no-cache",
-                    "Accept-Encoding": "gzip, deflate, br"
-                },
-                timeout: 7000 // 7 second axios timeout
+        // Konfigurasi request yang lebih kompatibel
+        const config = {
+            method: 'GET',
+            url: `https://sumut.kemenag.go.id/beranda/list-pencarian?cari=${encodeURIComponent(keyword)}`,
+            headers: {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+                'Accept-Language': 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7',
+                'Accept-Encoding': 'gzip, deflate, br',
+                'Connection': 'keep-alive',
+                'Upgrade-Insecure-Requests': '1',
+                'Sec-Fetch-Dest': 'document',
+                'Sec-Fetch-Mode': 'navigate',
+                'Sec-Fetch-Site': 'none',
+                'Cache-Control': 'max-age=0'
+            },
+            timeout: 10000, // 10 detik timeout
+            maxRedirects: 5,
+            validateStatus: function (status) {
+                return status >= 200 && status < 300;
             }
-        );
+        };
 
-        const response = await Promise.race([searchPromise, timeoutPromise]);
+        console.log('Fetching data for keyword:', keyword);
+        
+        const response = await axios(config);
+        
+        if (!response.data) {
+            throw new Error('No data received from target website');
+        }
+
         const $ = cheerio.load(response.data);
         const results = [];
 
-        // More efficient selector targeting
-        $(".grid-post-item").each((_, element) => {
+        // Scraping dengan error handling yang lebih baik
+        $(".grid-post-item").each((index, element) => {
             try {
                 const $element = $(element);
-                const title = $element.find("h1 a").text().trim();
-                const url = $element.find("h1 a").attr("href");
+                const $titleLink = $element.find("h1 a");
+                
+                const title = $titleLink.text().trim();
+                const url = $titleLink.attr("href");
                 
                 if (!title || !url) return;
 
+                const fullUrl = url.startsWith('http') 
+                    ? url 
+                    : `https://sumut.kemenag.go.id${url}`;
+
                 const date = $element.find(".post-date").text().trim();
-                const excerpt = $element.find("p").text().trim().substring(0, 200); // Limit excerpt length
-                const image = $element.find(".bg").data("bg");
+                const excerpt = $element.find("p").first().text().trim().substring(0, 200);
+                const image = $element.find(".bg").attr("data-bg") || $element.find("img").attr("src");
                 const category = $element.find(".post-category-marker").text().trim();
                 const viewsText = $element.find(".fa-eye").parent().text().trim();
+                const views = parseInt(viewsText.replace(/\D/g, '')) || 0;
 
                 results.push({
                     title,
-                    url: url.startsWith('http') ? url : `https://sumut.kemenag.go.id${url}`,
+                    url: fullUrl,
                     date,
                     excerpt,
-                    image,
+                    image: image && !image.startsWith('http') 
+                        ? `https://sumut.kemenag.go.id${image}` 
+                        : image,
                     category,
-                    views: parseInt(viewsText.replace(/\D/g, '')) || 0,
+                    views
                 });
-            } catch (error) {
-                console.error('Error parsing element:', error);
-                // Continue with next element
+            } catch (elementError) {
+                console.error(`Error parsing element ${index}:`, elementError.message);
             }
         });
 
-        // Cache the results
-        searchCache.set(cacheKey, {
+        // Cache hasil
+        cache.set(cacheKey, {
             data: results,
             timestamp: Date.now()
         });
 
-        // Clean up old cache entries
+        // Cleanup cache lama
         cleanupCache();
 
-        res.json(results);
+        console.log(`Successfully scraped ${results.length} results for keyword: ${keyword}`);
+
+        return res.status(200).json({
+            success: true,
+            data: results,
+            total: results.length,
+            keyword,
+            cached: false,
+            timestamp: Date.now()
+        });
 
     } catch (error) {
-        console.error("Error scraping data:", error.message);
-        
-        if (error.message === 'Request timeout' || error.code === 'ECONNABORTED') {
-            res.status(408).json({ 
-                error: "Request timeout",
-                message: "Search took too long. Please try a different keyword or try again later."
-            });
-        } else if (error.response) {
-            res.status(502).json({ 
-                error: "Upstream server error",
-                message: "The target website is not responding properly."
-            });
-        } else {
-            res.status(500).json({ 
-                error: "Failed to fetch data",
-                message: "Please try again later."
+        console.error('Scraping error:', {
+            message: error.message,
+            code: error.code,
+            status: error.response?.status,
+            statusText: error.response?.statusText,
+            keyword
+        });
+
+        // Error handling yang lebih spesifik
+        if (error.code === 'ECONNABORTED' || error.message.includes('timeout')) {
+            return res.status(408).json({
+                success: false,
+                error: 'Request Timeout',
+                message: 'Permintaan terlalu lama. Silakan coba lagi.',
+                code: 'TIMEOUT'
             });
         }
+
+        if (error.response) {
+            const status = error.response.status;
+            if (status === 403) {
+                return res.status(403).json({
+                    success: false,
+                    error: 'Access Forbidden',
+                    message: 'Akses ke website target diblokir.',
+                    code: 'FORBIDDEN'
+                });
+            }
+            if (status === 404) {
+                return res.status(404).json({
+                    success: false,
+                    error: 'Not Found',
+                    message: 'Halaman tidak ditemukan.',
+                    code: 'NOT_FOUND'
+                });
+            }
+        }
+
+        if (error.code === 'ENOTFOUND' || error.code === 'EAI_AGAIN') {
+            return res.status(502).json({
+                success: false,
+                error: 'Network Error',
+                message: 'Tidak dapat terhubung ke website target.',
+                code: 'NETWORK_ERROR'
+            });
+        }
+
+        return res.status(500).json({
+            success: false,
+            error: 'Internal Server Error',
+            message: 'Terjadi kesalahan saat memproses permintaan.',
+            code: 'INTERNAL_ERROR'
+        });
     }
 }
 
 function cleanupCache() {
     const now = Date.now();
-    for (const [key, value] of searchCache.entries()) {
-        if (now - value.timestamp > CACHE_DURATION) {
-            searchCache.delete(key);
+    for (const [key, value] of cache.entries()) {
+        if (now - value.timestamp > CACHE_TTL) {
+            cache.delete(key);
         }
     }
 }

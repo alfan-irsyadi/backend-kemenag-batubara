@@ -43,7 +43,7 @@ export default async function handler(req, res) {
                 "/api/tilok - GET data tilok", 
                 "/api/search?keyword=your_keyword - GET pencarian berita"
             ],
-            status: "active"
+            status: "active 2"
         });
     } else {
         res.status(405).json({ error: "Method not allowed" });
