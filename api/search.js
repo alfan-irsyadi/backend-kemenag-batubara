@@ -46,20 +46,13 @@ export default async function handler(req, res) {
         if (!keyword) {
             return res.status(400).json({ error: "Keyword parameter is required" });
         }
-
-        const response = await axios.get(
-            `https://sumut.kemenag.go.id/beranda/list-pencarian?cari=${encodeURIComponent(keyword)}`,
-            {
-                headers: {
-                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
-                },
-                timeout: 10000
-            }
-        );
-
+        const response = await axios.get(`https://sumut.kemenag.go.id/beranda/list-pencarian?cari=${encodeURIComponent(keyword)}`, {
+            headers: {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+            },
+        });
         const $ = cheerio.load(response.data);
         const results = [];
-
         $(".grid-post-item").each((_, element) => {
             const title = $(element).find("h1 a").text().trim();
             const url = $(element).find("h1 a").attr("href");
@@ -68,11 +61,10 @@ export default async function handler(req, res) {
             const image = $(element).find(".bg").data("bg");
             const category = $(element).find(".post-category-marker").text().trim();
             const viewsText = $(element).find(".fa-eye").parent().text().trim();
-
             if (title && url) {
                 results.push({
                     title,
-                    url: url.startsWith('http') ? url : `https://sumut.kemenag.go.id${url}`,
+                    url: `https://sumut.kemenag.go.id${url}`,
                     date,
                     excerpt,
                     image,
@@ -81,17 +73,10 @@ export default async function handler(req, res) {
                 });
             }
         });
-
         res.json(results);
-    } catch (error) {
+    }
+    catch (error) {
         console.error("Error scraping data:", error);
-        
-        if (error.code === 'ECONNABORTED') {
-            res.status(408).json({ error: "Request timeout" });
-        } else if (error.response) {
-            res.status(502).json({ error: "Upstream server error" });
-        } else {
-            res.status(500).json({ error: "Failed to fetch data" });
-        }
+        res.status(500).json({ error: "Failed to fetch data" });
     }
 }
