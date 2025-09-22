@@ -6,18 +6,50 @@
       "use": "@vercel/node"
     }
   ],
+  "functions": {
+    "api/search.js": {
+      "maxDuration": 15
+    },
+    "api/data.js": {
+      "maxDuration": 10
+    },
+    "api/tilok.js": {
+      "maxDuration": 10
+    },
+    "api/index.js": {
+      "maxDuration": 5
+    }
+  },
   "routes": [
     {
       "src": "/api/data",
-      "dest": "/api/data.js"
+      "dest": "/api/data.js",
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Access-Control-Allow-Headers": "Content-Type, Authorization, X-Requested-With",
+        "Cache-Control": "s-maxage=300"
+      }
     },
     {
       "src": "/api/tilok",
-      "dest": "/api/tilok.js"
+      "dest": "/api/tilok.js",
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS", 
+        "Access-Control-Allow-Headers": "Content-Type, Authorization, X-Requested-With",
+        "Cache-Control": "s-maxage=300"
+      }
     },
     {
       "src": "/api/search",
-      "dest": "/api/search.js"
+      "dest": "/api/search.js",
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Access-Control-Allow-Headers": "Content-Type, Authorization, X-Requested-With",
+        "Cache-Control": "s-maxage=180"
+      }
     },
     {
       "src": "/",
@@ -27,5 +59,39 @@
       "src": "/(.*)",
       "dest": "/api/index.js"
     }
-  ]
+  ],
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET, POST, PUT, DELETE, OPTIONS"
+        },
+        {
+          "key": "Access-Control-Allow-Headers", 
+          "value": "Content-Type, Authorization, X-Requested-With"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        }
+      ]
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  }
 }

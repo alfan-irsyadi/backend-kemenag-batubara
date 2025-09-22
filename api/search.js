@@ -5,6 +5,30 @@ import * as cheerio from "cheerio";
 const cache = new Map();
 const CACHE_TTL = 5 * 60 * 1000; // 5 menit
 
+// Daftar proxy services dengan fallback
+const PROXY_SERVICES = [
+    {
+        name: 'allorigins',
+        getUrl: (targetUrl) => `https://api.allorigins.win/get?url=${encodeURIComponent(targetUrl)}`,
+        extractData: (response) => response.data.contents
+    },
+    {
+        name: 'corsproxy',
+        getUrl: (targetUrl) => `https://corsproxy.io/?${encodeURIComponent(targetUrl)}`,
+        extractData: (response) => response.data
+    },
+    {
+        name: 'thingproxy',
+        getUrl: (targetUrl) => `https://thingproxy.freeboard.io/fetch/${encodeURIComponent(targetUrl)}`,
+        extractData: (response) => response.data
+    },
+    {
+        name: 'direct',
+        getUrl: (targetUrl) => targetUrl,
+        extractData: (response) => response.data
+    }
+];
+
 export default async function handler(req, res) {
     // Set CORS headers
     res.setHeader('Access-Control-Allow-Origin', '*');
@@ -40,38 +64,59 @@ export default async function handler(req, res) {
             });
         }
 
-        // Konfigurasi request yang lebih kompatibel
-        const config = {
-            method: 'GET',
-            url: `https://sumut.kemenag.go.id/beranda/list-pencarian?cari=${encodeURIComponent(keyword)}`,
-            headers: {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-                'Accept-Language': 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7',
-                'Accept-Encoding': 'gzip, deflate, br',
-                'Connection': 'keep-alive',
-                'Upgrade-Insecure-Requests': '1',
-                'Sec-Fetch-Dest': 'document',
-                'Sec-Fetch-Mode': 'navigate',
-                'Sec-Fetch-Site': 'none',
-                'Cache-Control': 'max-age=0'
-            },
-            timeout: 10000, // 10 detik timeout
-            maxRedirects: 5,
-            validateStatus: function (status) {
-                return status >= 200 && status < 300;
-            }
-        };
+        const targetUrl = `https://sumut.kemenag.go.id/beranda/list-pencarian?cari=${encodeURIComponent(keyword)}`;
+        let htmlData = null;
+        let usedProxy = null;
 
-        console.log('Fetching data for keyword:', keyword);
-        
-        const response = await axios(config);
-        
-        if (!response.data) {
-            throw new Error('No data received from target website');
+        // Try each proxy service
+        for (const proxy of PROXY_SERVICES) {
+            try {
+                console.log(`Trying ${proxy.name} proxy for keyword: ${keyword}`);
+                
+                const proxyUrl = proxy.getUrl(targetUrl);
+                
+                const config = {
+                    method: 'GET',
+                    url: proxyUrl,
+                    headers: {
+                        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+                        'Accept-Language': 'id-ID,id;q=0.9,en;q=0.8',
+                        'Accept-Encoding': 'gzip, deflate, br',
+                        'Connection': 'keep-alive',
+                        'Cache-Control': 'no-cache'
+                    },
+                    timeout: 8000, // 8 detik timeout per proxy
+                    maxRedirects: 3,
+                    validateStatus: function (status) {
+                        return status >= 200 && status < 300;
+                    }
+                };
+
+                const response = await axios(config);
+                htmlData = proxy.extractData(response);
+                usedProxy = proxy.name;
+                
+                if (htmlData && htmlData.length > 100) {
+                    console.log(`Success with ${proxy.name} proxy`);
+                    break;
+                } else {
+                    console.log(`${proxy.name} returned empty or invalid data`);
+                    continue;
+                }
+                
+            } catch (proxyError) {
+                console.log(`${proxy.name} proxy failed:`, proxyError.message);
+                continue;
+            }
         }
 
-        const $ = cheerio.load(response.data);
+        if (!htmlData) {
+            throw new Error('All proxy services failed');
+        }
+
+        // Parse HTML dengan cheerio
+        const $ = cheerio.load(htmlData);
         const results = [];
 
         // Scraping dengan error handling yang lebih baik
@@ -91,7 +136,16 @@ export default async function handler(req, res) {
 
                 const date = $element.find(".post-date").text().trim();
                 const excerpt = $element.find("p").first().text().trim().substring(0, 200);
-                const image = $element.find(".bg").attr("data-bg") || $element.find("img").attr("src");
+                
+                // Handle image URL
+                let image = $element.find(".bg").attr("data-bg") || 
+                           $element.find(".bg").data("bg") ||
+                           $element.find("img").attr("src");
+                
+                if (image && !image.startsWith('http')) {
+                    image = `https://sumut.kemenag.go.id${image}`;
+                }
+
                 const category = $element.find(".post-category-marker").text().trim();
                 const viewsText = $element.find(".fa-eye").parent().text().trim();
                 const views = parseInt(viewsText.replace(/\D/g, '')) || 0;
@@ -101,9 +155,7 @@ export default async function handler(req, res) {
                     url: fullUrl,
                     date,
                     excerpt,
-                    image: image && !image.startsWith('http') 
-                        ? `https://sumut.kemenag.go.id${image}` 
-                        : image,
+                    image,
                     category,
                     views
                 });
@@ -121,13 +173,14 @@ export default async function handler(req, res) {
         // Cleanup cache lama
         cleanupCache();
 
-        console.log(`Successfully scraped ${results.length} results for keyword: ${keyword}`);
+        console.log(`Successfully scraped ${results.length} results using ${usedProxy} proxy`);
 
         return res.status(200).json({
             success: true,
             data: results,
             total: results.length,
             keyword,
+            proxy: usedProxy,
             cached: false,
             timestamp: Date.now()
         });
@@ -136,12 +189,19 @@ export default async function handler(req, res) {
         console.error('Scraping error:', {
             message: error.message,
             code: error.code,
-            status: error.response?.status,
-            statusText: error.response?.statusText,
             keyword
         });
 
         // Error handling yang lebih spesifik
+        if (error.message === 'All proxy services failed') {
+            return res.status(502).json({
+                success: false,
+                error: 'Proxy Services Unavailable',
+                message: 'Semua layanan proxy tidak dapat diakses. Silakan coba lagi nanti.',
+                code: 'PROXY_FAILED'
+            });
+        }
+
         if (error.code === 'ECONNABORTED' || error.message.includes('timeout')) {
             return res.status(408).json({
                 success: false,
@@ -151,40 +211,12 @@ export default async function handler(req, res) {
             });
         }
 
-        if (error.response) {
-            const status = error.response.status;
-            if (status === 403) {
-                return res.status(403).json({
-                    success: false,
-                    error: 'Access Forbidden',
-                    message: 'Akses ke website target diblokir.',
-                    code: 'FORBIDDEN'
-                });
-            }
-            if (status === 404) {
-                return res.status(404).json({
-                    success: false,
-                    error: 'Not Found',
-                    message: 'Halaman tidak ditemukan.',
-                    code: 'NOT_FOUND'
-                });
-            }
-        }
-
-        if (error.code === 'ENOTFOUND' || error.code === 'EAI_AGAIN') {
-            return res.status(502).json({
-                success: false,
-                error: 'Network Error',
-                message: 'Tidak dapat terhubung ke website target.',
-                code: 'NETWORK_ERROR'
-            });
-        }
-
         return res.status(500).json({
             success: false,
             error: 'Internal Server Error',
             message: 'Terjadi kesalahan saat memproses permintaan.',
-            code: 'INTERNAL_ERROR'
+            code: 'INTERNAL_ERROR',
+            details: process.env.NODE_ENV === 'development' ? error.message : undefined
         });
     }
 }
@@ -195,5 +227,11 @@ function cleanupCache() {
         if (now - value.timestamp > CACHE_TTL) {
             cache.delete(key);
         }
+    }
+    
+    // Batasi ukuran cache maksimal 100 entries
+    if (cache.size > 100) {
+        const oldestKey = cache.keys().next().value;
+        cache.delete(oldestKey);
     }
 }
