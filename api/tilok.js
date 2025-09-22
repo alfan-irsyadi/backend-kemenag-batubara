@@ -43,7 +43,7 @@ export default async function handler(req, res) {
     }
 
     try {
-        const filePath = path.join(process.cwd(), 'api', 'tilok.csv');
+        const filePath = path.join(process.cwd(), 'data', 'tilok.csv');
         
         if (!fs.existsSync(filePath)) {
             return res.status(404).json({ error: "Tilok file not found" });
