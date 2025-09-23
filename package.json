@@ -2,18 +2,29 @@
   "name": "backend-kemenag-batubara",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
+    "fetch-proxies": "node -e \"const ProxyFetcher = require('./api/proxy-fetcher'); new ProxyFetcher().getFreshProxies().then(console.log)\"",
+    "search": "node api/search.js \"keyword\"",
     "dev": "vercel dev"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "scraping",
+    "proxy",
+    "indonesia",
+    "nodejs",
+    "kemenag"
+  ],
+  "author": "alfan-irsyadi",
+  "license": "MIT",
   "dependencies": {
     "axios": "^1.12.2",
     "cheerio": "^1.1.2",
     "cors": "^2.8.5",
     "express": "^5.1.0",
+    "https-proxy-agent": "^7.0.2",
+    "http-proxy-agent": "^7.0.0",
+    "user-agents": "^1.0.1598",
     "papaparse": "^5.5.3"
   },
   "engines": {

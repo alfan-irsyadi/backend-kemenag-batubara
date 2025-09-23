@@ -1,7 +1,7 @@
-import fs from "fs";
-import papa from "papaparse";
-import path from "path";
-import cors from "cors";
+const fs = require("fs");
+const papa = require("papaparse");
+const path = require("path");
+const cors = require("cors");
 
 const allowedOrigins = [
     "http://localhost:5173",
@@ -29,14 +29,24 @@ const corsMiddleware = cors({
     optionsSuccessStatus: 200
 });
 
-export default async function handler(req, res) {
-    // Apply CORS middleware
-    await new Promise((resolve, reject) => {
-        corsMiddleware(req, res, (err) => {
-            if (err) reject(err);
-            else resolve();
-        });
-    });
+// Cache the parsed data
+let cachedTilokData = null;
+let tilokLastModified = null;
+
+module.exports = async function handler(req, res) {
+    // Set CORS headers
+    res.setHeader('Access-Control-Allow-Credentials', true);
+    res.setHeader('Access-Control-Allow-Origin', allowedOrigins.join(', '));
+    res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT');
+    res.setHeader(
+        'Access-Control-Allow-Headers',
+        'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version'
+    );
+
+    if (req.method === 'OPTIONS') {
+        res.status(200).end();
+        return;
+    }
 
     if (req.method !== 'GET') {
         return res.status(405).json({ error: "Method not allowed" });
@@ -46,15 +56,36 @@ export default async function handler(req, res) {
         const filePath = path.join(process.cwd(), 'data', 'tilok.csv');
         
         if (!fs.existsSync(filePath)) {
-            return res.status(404).json({ error: "Tilok file not found" });
+            return res.status(404).json({ 
+                success: false,
+                error: "Tilok file not found" 
+            });
         }
 
-        const fileContent = fs.readFileSync(filePath, "utf-8");
-        const parsed_data = papa.parse(fileContent, { header: true });
-        
-        res.json(parsed_data.data);
+        // Check if file has been modified
+        const stats = fs.statSync(filePath);
+        if (!cachedTilokData || !tilokLastModified || stats.mtime > tilokLastModified) {
+            const fileContent = fs.readFileSync(filePath, "utf-8");
+            const parsed_data = papa.parse(fileContent, { header: true, skipEmptyLines: true });
+            cachedTilokData = parsed_data.data;
+            tilokLastModified = stats.mtime;
+        }
+
+        res.status(200).json({
+            success: true,
+            data: cachedTilokData,
+            meta: {
+                totalRecords: cachedTilokData.length,
+                lastModified: tilokLastModified.toISOString(),
+                timestamp: new Date().toISOString()
+            }
+        });
     } catch (error) {
         console.error("Error reading tilok file:", error);
-        res.status(500).json({ error: "Failed to read tilok file" });
+        res.status(500).json({ 
+            success: false,
+            error: "Failed to read tilok file",
+            details: error.message 
+        });
     }
-}
+};

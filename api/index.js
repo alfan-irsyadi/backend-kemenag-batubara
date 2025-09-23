@@ -1,4 +1,4 @@
-import cors from "cors";
+const cors = require("cors");
 
 const allowedOrigins = [
     "http://localhost:5173",
@@ -26,26 +26,37 @@ const corsMiddleware = cors({
     optionsSuccessStatus: 200
 });
 
-export default async function handler(req, res) {
-    // Apply CORS middleware
-    await new Promise((resolve, reject) => {
-        corsMiddleware(req, res, (err) => {
-            if (err) reject(err);
-            else resolve();
-        });
-    });
+module.exports = async function handler(req, res) {
+    // Set CORS headers
+    res.setHeader('Access-Control-Allow-Credentials', true);
+    res.setHeader('Access-Control-Allow-Origin', allowedOrigins.join(', '));
+    res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT');
+    res.setHeader(
+        'Access-Control-Allow-Headers',
+        'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version'
+    );
+
+    if (req.method === 'OPTIONS') {
+        res.status(200).end();
+        return;
+    }
 
     if (req.method === 'GET') {
         res.status(200).json({
+            success: true,
             message: "API Berhasil",
             endpoints: [
                 "/api/data - GET data kepegawaian",
                 "/api/tilok - GET data tilok", 
                 "/api/search?keyword=your_keyword - GET pencarian berita"
             ],
-            status: "active 2"
+            status: "active",
+            timestamp: new Date().toISOString()
         });
     } else {
-        res.status(405).json({ error: "Method not allowed" });
+        res.status(405).json({ 
+            success: false,
+            error: "Method not allowed" 
+        });
     }
-}
+};
