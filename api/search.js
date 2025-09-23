@@ -123,10 +123,6 @@ class KemenagScraper {
         return new Promise(resolve => setTimeout(resolve, ms));
     }
 
-    async test() {
-        return await this.scrapeSearchResults("test");
-    }
-
     async scrapeSearchResults(keyword = "batu bara") {
         const targetUrl = `https://sumut.kemenag.go.id/beranda/list-pencarian?cari=${encodeURIComponent(keyword)}`;
         console.log(`🎯 Target URL: ${targetUrl}`);
@@ -176,22 +172,22 @@ class KemenagScraper {
             const link = $item.find('h1 a').attr('href');
             const image = $item.find('.bg').data('bg');
             const category = $item.find('.post-category-marker').text().trim();
-            const date = $item.find('.post-date').text().replace('i class="far fa-clock"></i>', '').trim();
+            const date = $item.find('.post-date').text().replace('<i class="far fa-clock"></i>', '').trim();
             const excerpt = $item.find('p').text().trim();
             const views = $item.find('.fa-eye').parent().text().trim();
 
             // Construct full URL if relative
-            const fullLink = link.startsWith('http') ? link : `https://sumut.kemenag.go.id${link}`;
-            const fullImage = image.startsWith('http') ? image : `https://sumut.kemenag.go.id${image}`;
+            const fullLink = link && link.startsWith('http') ? link : `https://sumut.kemenag.go.id${link}`;
+            const fullImage = image && image.startsWith('http') ? image : `https://sumut.kemenag.go.id${image}`;
 
             if (title) {
                 results.push({
                     title,
-                    link: fullLink,
-                    image: fullImage,
-                    category,
-                    date,
-                    excerpt,
+                    link: fullLink || '',
+                    image: fullImage || '',
+                    category: category || '',
+                    date: date || '',
+                    excerpt: excerpt || '',
                     views: parseInt(views) || 0,
                     index
                 });
@@ -215,7 +211,8 @@ const allowedOrigins = [
     "https://backend-kemenag-batubara.vercel.app"
 ];
 
-module.exports = async function handler(req, res) {
+// API Handler function
+async function searchHandler(req, res) {
     // Set CORS headers
     res.setHeader('Access-Control-Allow-Credentials', true);
     res.setHeader('Access-Control-Allow-Origin', allowedOrigins.join(', '));
@@ -235,6 +232,8 @@ module.exports = async function handler(req, res) {
             const { keyword = "batu bara" } = req.query;
             
             console.log(`🔍 Starting search for: ${keyword}`);
+            
+            // PERBAIKAN: Gunakan new untuk instansiasi class
             const scraper = new KemenagScraper();
             const results = await scraper.scrapeSearchResults(keyword);
 
@@ -253,7 +252,7 @@ module.exports = async function handler(req, res) {
             error: "Method not allowed"
         });
     }
-    
-};
+}
 
-module.exports = KemenagScraper;
+// Export handler function, bukan class
+module.exports = searchHandler;
