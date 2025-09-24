@@ -4,9 +4,8 @@ const path = require("path");
 const cors = require("cors");
 
 const allowedOrigins = [
-    "http://localhost:5173",
     "https://kemenag-batubara.vercel.app",
-    "https://backend-kemenag-batubara.vercel.app"
+    "http://localhost:5173"
 ];
 
 const corsMiddleware = cors({
