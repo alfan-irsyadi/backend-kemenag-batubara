@@ -1,9 +1,27 @@
 // api/search.js
 const cheerio = require("cheerio");
 
+const allowedOrigins = [
+  "https://kemenag-batubara.vercel.app",
+  "http://localhost:5173",
+];
+
 export default async function handler(req, res) {
   if (req.method !== "GET") {
     return res.status(405).json({ error: "Method not allowed" });
+  }
+
+  // Set CORS headers
+  const origin = req.headers.origin || "https://kemenag-batubara.vercel.app";
+  res.setHeader(
+    "Access-Control-Allow-Origin",
+    allowedOrigins.includes(origin) ? origin : allowedOrigins[0]
+  );
+  res.setHeader("Access-Control-Allow-Methods", "GET, OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+  if (req.method === "OPTIONS") {
+    res.status(200).end();
+    return;
   }
 
   // Extract query parameters
@@ -72,7 +90,7 @@ export default async function handler(req, res) {
         title,
         url: fullUrl,
         image_url: imageUrl,
-        image: imageUrl, // Add for frontend compatibility
+        image: imageUrl, // For frontend compatibility
         category,
         date,
         excerpt,
@@ -90,14 +108,6 @@ export default async function handler(req, res) {
         }
       }
     });
-
-    // Set CORS headers for /api/search
-    res.setHeader(
-      "Access-Control-Allow-Origin",
-      allowedOrigins.includes(req.headers.origin) ? req.headers.origin : allowedOrigins[0]
-    );
-    res.setHeader("Access-Control-Allow-Methods", "GET, OPTIONS");
-    res.setHeader("Access-Control-Allow-Headers", "Content-Type");
 
     res.status(200).json({
       posts,
