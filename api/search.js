@@ -1,5 +1,5 @@
 // api/search.js
-import cheerio from 'cheerio';
+const cheerio = require('cheerio'); // Use CommonJS to avoid ESM issues
 
 export default async function handler(req, res) {
   // Ensure the request method is GET
@@ -23,18 +23,22 @@ export default async function handler(req, res) {
   }
 
   // ScrapingAnt API configuration
-  const apiKey = process.env.SCRAPINGANT_API_KEY; // Store API key in environment variable
+  const apiKey = process.env.SCRAPINGANT_API_KEY;
+  if (!apiKey) {
+    return res.status(500).json({ error: 'ScrapingAnt API key is missing' });
+  }
   const proxyType = 'residential';
   const proxyCountry = 'ID';
   const targetUrl = encodeURIComponent(url);
   const scrapingAntUrl = `https://api.scrapingant.com/v2/general?url=${targetUrl}&x-api-key=${apiKey}&proxy_type=${proxyType}&proxy_country=${proxyCountry}&output=raw_html`;
 
   try {
-    // Make the request to ScrapingAnt API for raw HTML
+    // Make the request to ScrapingAnt API
     const response = await fetch(scrapingAntUrl, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
+        'Accept-Encoding': 'gzip, deflate', // Explicitly allow gzip
       },
     });
 
@@ -42,9 +46,22 @@ export default async function handler(req, res) {
     if (!response.ok) {
       throw new Error(`ScrapingAnt API responded with status: ${response.status}`);
     }
-    console.log(response)
-    // Parse the response data (ScrapingAnt returns HTML in the response body for raw_html)
-    const apiResponse = await response.text(); // Use .text() for raw HTML
+
+    // Read the response body
+    const apiResponse = await response.text();
+    if (!apiResponse) {
+      throw new Error('Empty response body from ScrapingAnt');
+    }
+
+    // Debug: Log response length to ensure data is received
+    console.log(`Received HTML length: ${apiResponse.length} characters`);
+
+    // Verify cheerio is loaded
+    if (!cheerio || !cheerio.load) {
+      throw new Error('Cheerio module failed to load');
+    }
+
+    // Parse HTML with cheerio
     const $ = cheerio.load(apiResponse);
 
     // Extract all grid-post-item elements
@@ -66,7 +83,7 @@ export default async function handler(req, res) {
 
       // Date (strip icon text)
       let date = $item.find('.post-date').text().trim();
-      date = date.replace(/\s*far fa-clock\s*/i, '').trim(); // Remove icon class text if present
+      date = date.replace(/\s*far fa-clock\s*/i, '').trim();
 
       // Excerpt
       const excerpt = $item.find('p').first().text().trim() || null;
@@ -86,9 +103,9 @@ export default async function handler(req, res) {
       });
     });
 
-    // Extract pagination links (adjust selector based on actual HTML, e.g., '.pagination a')
+    // Extract pagination links
     const pagination = [];
-    $('.pagination a, .pager a').each((index, element) => { // Common classes; customize if needed
+    $('.pagination a, .pager a').each((index, element) => {
       const pagLink = $(element).attr('href');
       if (pagLink) {
         const fullPagUrl = new URL(pagLink, 'https://sumut.kemenag.go.id').href;
