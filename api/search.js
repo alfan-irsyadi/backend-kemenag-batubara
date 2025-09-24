@@ -42,7 +42,7 @@ export default async function handler(req, res) {
     if (!response.ok) {
       throw new Error(`ScrapingAnt API responded with status: ${response.status}`);
     }
-
+    console.log(response)
     // Parse the response data (ScrapingAnt returns HTML in the response body for raw_html)
     const apiResponse = await response.text(); // Use .text() for raw HTML
     const $ = cheerio.load(apiResponse);
