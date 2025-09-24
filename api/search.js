@@ -1,5 +1,7 @@
-// api/search.js
+// api/search.js (updated to load from data/news.json if ScrapingAnt fails)
 const cheerio = require("cheerio");
+const fs = require("fs");
+const path = require("path");
 
 const allowedOrigins = [
   "https://kemenag-batubara.vercel.app",
@@ -116,7 +118,18 @@ export default async function handler(req, res) {
       scraped_url: url,
     });
   } catch (error) {
-    console.error("Error scraping:", error);
-    res.status(500).json({ error: "Failed to scrape page", details: error.message });
+    console.error("Error scraping with ScrapingAnt:", error);
+    // Load backup from data/news.json
+    try {
+      const filePath = path.join(process.cwd(), 'data', 'news.json');
+      if (fs.existsSync(filePath)) {
+        const backupData = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+        res.status(200).json(backupData);
+      } else {
+        res.status(500).json({ error: "Failed to scrape page and no backup available", details: error.message });
+      }
+    } catch (backupError) {
+      res.status(500).json({ error: "Failed to load backup", details: backupError.message });
+    }
   }
 };
