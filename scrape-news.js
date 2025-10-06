@@ -96,7 +96,7 @@ async function fetchAllNews() {
   });
 
   // Create data/ directory if it doesn't exist
-  const dataDir = path.join(__dirname, '..', 'data');
+  const dataDir = path.join(__dirname,  'data');
   try {
     await fs.mkdir(dataDir, { recursive: true });
   } catch (error) {
