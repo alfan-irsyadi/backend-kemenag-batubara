@@ -1,0 +1,3495 @@
+{
+    "version": 1,
+    "message": "",
+    "success": true,
+    "errors": null,
+    "metadata": {
+        "pagination": {
+            "per_page": 1000,
+            "total": 183,
+            "current_page": 1,
+            "last_page": 1,
+            "next_page_url": null,
+            "prev_page_url": null
+        }
+    },
+    "results": [
+        {
+            "name": "RA AL HIJRAH",
+            "npsn": "70010275",
+            "nsm": "101212190027",
+            "id": 8866,
+            "statistic_num": "101212190027",
+            "institution_personnel_count": {
+                "institution_id": 8866,
+                "teacher_with_assignment": 0,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 0,
+                "teacher_without_assignment": 6,
+                "education_staff_without_assignment": 1,
+                "personnel_without_assignment_total": 7,
+                "personnel_teacher": 6,
+                "personnel_education_staff": 1,
+                "personnel_total": 7
+            }
+        },
+        {
+            "name": "RA AZKIYA",
+            "npsn": "69995372",
+            "nsm": "101212190053",
+            "id": 9013,
+            "statistic_num": "101212190053",
+            "institution_personnel_count": {
+                "institution_id": 9013,
+                "teacher_with_assignment": 1,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 1,
+                "teacher_without_assignment": 1,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 1,
+                "personnel_teacher": 2,
+                "personnel_education_staff": 0,
+                "personnel_total": 2
+            }
+        },
+        {
+            "name": "RA PERTIWI",
+            "npsn": "69994195",
+            "nsm": "101212190054",
+            "id": 9014,
+            "statistic_num": "101212190054",
+            "institution_personnel_count": {
+                "institution_id": 9014,
+                "teacher_with_assignment": 1,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 1,
+                "teacher_without_assignment": 1,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 1,
+                "personnel_teacher": 2,
+                "personnel_education_staff": 0,
+                "personnel_total": 2
+            }
+        },
+        {
+            "name": "RA ASY-SYA'UFI MUNIROH",
+            "npsn": "70010923",
+            "nsm": "101212190055",
+            "id": 9025,
+            "statistic_num": "101212190055",
+            "institution_personnel_count": {
+                "institution_id": 9025,
+                "teacher_with_assignment": 0,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 0,
+                "teacher_without_assignment": 2,
+                "education_staff_without_assignment": 2,
+                "personnel_without_assignment_total": 4,
+                "personnel_teacher": 2,
+                "personnel_education_staff": 2,
+                "personnel_total": 4
+            }
+        },
+        {
+            "name": "MAN BATU BARA",
+            "npsn": "60728915",
+            "nsm": "131112210001",
+            "id": 20757,
+            "statistic_num": "131112210001",
+            "institution_personnel_count": {
+                "institution_id": 20757,
+                "teacher_with_assignment": 1,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 1,
+                "teacher_without_assignment": 58,
+                "education_staff_without_assignment": 18,
+                "personnel_without_assignment_total": 76,
+                "personnel_teacher": 59,
+                "personnel_education_staff": 18,
+                "personnel_total": 77
+            }
+        },
+        {
+            "name": "MTSS BAITUSSALAM",
+            "npsn": "69994196",
+            "nsm": "121212190031",
+            "id": 26372,
+            "statistic_num": "121212190031",
+            "institution_personnel_count": {
+                "institution_id": 26372,
+                "teacher_with_assignment": 9,
+                "education_staff_with_assignment": 1,
+                "personnel_with_assignment_total": 10,
+                "teacher_without_assignment": 0,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 0,
+                "personnel_teacher": 9,
+                "personnel_education_staff": 1,
+                "personnel_total": 10
+            }
+        },
+        {
+            "name": "MTSS DARUL ILMI",
+            "npsn": "69995265",
+            "nsm": "121212190032",
+            "id": 26376,
+            "statistic_num": "121212190032",
+            "institution_personnel_count": {
+                "institution_id": 26376,
+                "teacher_with_assignment": 2,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 2,
+                "teacher_without_assignment": 2,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 2,
+                "personnel_teacher": 4,
+                "personnel_education_staff": 0,
+                "personnel_total": 4
+            }
+        },
+        {
+            "name": "MTSS AL WASHLIYAH LABUHAN RUKU",
+            "npsn": "10264079",
+            "nsm": "121212190048",
+            "id": 26425,
+            "statistic_num": "121212190048",
+            "institution_personnel_count": {
+                "institution_id": 26425,
+                "teacher_with_assignment": 8,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 8,
+                "teacher_without_assignment": 1,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 1,
+                "personnel_teacher": 9,
+                "personnel_education_staff": 0,
+                "personnel_total": 9
+            }
+        },
+        {
+            "name": "MTSS AL MUMTAZ BATU BARA",
+            "npsn": "70006436",
+            "nsm": "121212190077",
+            "id": 26506,
+            "statistic_num": "121212190077",
+            "institution_personnel_count": {
+                "institution_id": 26506,
+                "teacher_with_assignment": 3,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 3,
+                "teacher_without_assignment": 5,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 5,
+                "personnel_teacher": 8,
+                "personnel_education_staff": 0,
+                "personnel_total": 8
+            }
+        },
+        {
+            "name": "MTSS AL-WASHLIYAH BANDAR SONO",
+            "npsn": "69726315",
+            "nsm": "121212210116",
+            "id": 32292,
+            "statistic_num": "121212210116",
+            "institution_personnel_count": {
+                "institution_id": 32292,
+                "teacher_with_assignment": 1,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 1,
+                "teacher_without_assignment": 14,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 14,
+                "personnel_teacher": 15,
+                "personnel_education_staff": 0,
+                "personnel_total": 15
+            }
+        },
+        {
+            "name": "MTSS AL-WASHLIYAH TITI MERAH",
+            "npsn": "69726309",
+            "nsm": "121212210003",
+            "id": 33104,
+            "statistic_num": "121212210003",
+            "institution_personnel_count": {
+                "institution_id": 33104,
+                "teacher_with_assignment": 23,
+                "education_staff_with_assignment": 2,
+                "personnel_with_assignment_total": 26,
+                "teacher_without_assignment": 0,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 0,
+                "personnel_teacher": 23,
+                "personnel_education_staff": 2,
+                "personnel_total": 25
+            }
+        },
+        {
+            "name": "MTSS AL-WASHLIYAH TANJUNG KUBAH",
+            "npsn": "10264504",
+            "nsm": "121212210005",
+            "id": 33107,
+            "statistic_num": "121212210005",
+            "institution_personnel_count": {
+                "institution_id": 33107,
+                "teacher_with_assignment": 0,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 0,
+                "teacher_without_assignment": 18,
+                "education_staff_without_assignment": 2,
+                "personnel_without_assignment_total": 20,
+                "personnel_teacher": 18,
+                "personnel_education_staff": 2,
+                "personnel_total": 20
+            }
+        },
+        {
+            "name": "MTSS AL-WASHLIYAH DESA PAKAM",
+            "npsn": "10264512",
+            "nsm": "121212210006",
+            "id": 33109,
+            "statistic_num": "121212210006",
+            "institution_personnel_count": {
+                "institution_id": 33109,
+                "teacher_with_assignment": 0,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 0,
+                "teacher_without_assignment": 11,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 12,
+                "personnel_teacher": 11,
+                "personnel_education_staff": 0,
+                "personnel_total": 11
+            }
+        },
+        {
+            "name": "MTSS SPI TANJUNG TIRAM",
+            "npsn": "10264522",
+            "nsm": "121212210001",
+            "id": 33111,
+            "statistic_num": "121212210001",
+            "institution_personnel_count": {
+                "institution_id": 33111,
+                "teacher_with_assignment": 0,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 0,
+                "teacher_without_assignment": 16,
+                "education_staff_without_assignment": 1,
+                "personnel_without_assignment_total": 17,
+                "personnel_teacher": 16,
+                "personnel_education_staff": 1,
+                "personnel_total": 17
+            }
+        },
+        {
+            "name": "MTSS AL WASHLIYAH TANJUNG TIRAM",
+            "npsn": "10264078",
+            "nsm": "121212210002",
+            "id": 33112,
+            "statistic_num": "121212210002",
+            "institution_personnel_count": {
+                "institution_id": 33112,
+                "teacher_with_assignment": 3,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 3,
+                "teacher_without_assignment": 20,
+                "education_staff_without_assignment": 1,
+                "personnel_without_assignment_total": 21,
+                "personnel_teacher": 23,
+                "personnel_education_staff": 1,
+                "personnel_total": 24
+            }
+        },
+        {
+            "name": "MTSS TELADAN UJUNG KUBU",
+            "npsn": "69881591",
+            "nsm": "121212210007",
+            "id": 33115,
+            "statistic_num": "121212210007",
+            "institution_personnel_count": {
+                "institution_id": 33115,
+                "teacher_with_assignment": 23,
+                "education_staff_with_assignment": 3,
+                "personnel_with_assignment_total": 26,
+                "teacher_without_assignment": 4,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 4,
+                "personnel_teacher": 27,
+                "personnel_education_staff": 3,
+                "personnel_total": 30
+            }
+        },
+        {
+            "name": "MTSS YAPI SIPARE-PARE",
+            "npsn": "10264506",
+            "nsm": "121212210008",
+            "id": 33117,
+            "statistic_num": "121212210008",
+            "institution_personnel_count": {
+                "institution_id": 33117,
+                "teacher_with_assignment": 10,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 10,
+                "teacher_without_assignment": 4,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 4,
+                "personnel_teacher": 14,
+                "personnel_education_staff": 0,
+                "personnel_total": 14
+            }
+        },
+        {
+            "name": "MTSS AL-WASHLIYAH SIAJAM",
+            "npsn": "10264514",
+            "nsm": "121212210009",
+            "id": 33119,
+            "statistic_num": "121212210009",
+            "institution_personnel_count": {
+                "institution_id": 33119,
+                "teacher_with_assignment": 3,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 3,
+                "teacher_without_assignment": 7,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 7,
+                "personnel_teacher": 10,
+                "personnel_education_staff": 0,
+                "personnel_total": 10
+            }
+        },
+        {
+            "name": "MTSS AL MUNAWWARAH",
+            "npsn": "10264048",
+            "nsm": "121212210014",
+            "id": 33122,
+            "statistic_num": "121212210014",
+            "institution_personnel_count": {
+                "institution_id": 33122,
+                "teacher_with_assignment": 1,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 1,
+                "teacher_without_assignment": 21,
+                "education_staff_without_assignment": 4,
+                "personnel_without_assignment_total": 25,
+                "personnel_teacher": 22,
+                "personnel_education_staff": 4,
+                "personnel_total": 26
+            }
+        },
+        {
+            "name": "MTSS AL-WASHLIYAH PANGKALAN DODEK",
+            "npsn": "69726312",
+            "nsm": "121212210015",
+            "id": 33124,
+            "statistic_num": "121212210015",
+            "institution_personnel_count": {
+                "institution_id": 33124,
+                "teacher_with_assignment": 14,
+                "education_staff_with_assignment": 1,
+                "personnel_with_assignment_total": 15,
+                "teacher_without_assignment": 1,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 1,
+                "personnel_teacher": 15,
+                "personnel_education_staff": 1,
+                "personnel_total": 16
+            }
+        },
+        {
+            "name": "MTSS MULIA SEI BALAI",
+            "npsn": "69725094",
+            "nsm": "121212210016",
+            "id": 33126,
+            "statistic_num": "121212210016",
+            "institution_personnel_count": {
+                "institution_id": 33126,
+                "teacher_with_assignment": 10,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 10,
+                "teacher_without_assignment": 5,
+                "education_staff_without_assignment": 2,
+                "personnel_without_assignment_total": 7,
+                "personnel_teacher": 15,
+                "personnel_education_staff": 2,
+                "personnel_total": 17
+            }
+        },
+        {
+            "name": "MTSS SEPAKAT SEI BALAI",
+            "npsn": "10264515",
+            "nsm": "121212210017",
+            "id": 33128,
+            "statistic_num": "121212210017",
+            "institution_personnel_count": {
+                "institution_id": 33128,
+                "teacher_with_assignment": 9,
+                "education_staff_with_assignment": 1,
+                "personnel_with_assignment_total": 10,
+                "teacher_without_assignment": 0,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 0,
+                "personnel_teacher": 9,
+                "personnel_education_staff": 1,
+                "personnel_total": 10
+            }
+        },
+        {
+            "name": "MTSS CIPTA SIMPANG DOLOK",
+            "npsn": "10264507",
+            "nsm": "121212210010",
+            "id": 33130,
+            "statistic_num": "121212210010",
+            "institution_personnel_count": {
+                "institution_id": 33130,
+                "teacher_with_assignment": 0,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 0,
+                "teacher_without_assignment": 19,
+                "education_staff_without_assignment": 1,
+                "personnel_without_assignment_total": 21,
+                "personnel_teacher": 19,
+                "personnel_education_staff": 1,
+                "personnel_total": 20
+            }
+        },
+        {
+            "name": "MTSS AL WASHLIYAH PETATAL",
+            "npsn": "10264080",
+            "nsm": "121212210011",
+            "id": 33131,
+            "statistic_num": "121212210011",
+            "institution_personnel_count": {
+                "institution_id": 33131,
+                "teacher_with_assignment": 15,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 15,
+                "teacher_without_assignment": 1,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 1,
+                "personnel_teacher": 16,
+                "personnel_education_staff": 0,
+                "personnel_total": 16
+            }
+        },
+        {
+            "name": "MTSS DARUSSALAM",
+            "npsn": "69726310",
+            "nsm": "121212210012",
+            "id": 33132,
+            "statistic_num": "121212210012",
+            "institution_personnel_count": {
+                "institution_id": 33132,
+                "teacher_with_assignment": 0,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 0,
+                "teacher_without_assignment": 12,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 12,
+                "personnel_teacher": 12,
+                "personnel_education_staff": 0,
+                "personnel_total": 12
+            }
+        },
+        {
+            "name": "MTSS AL-WASHLIYAH KEDAISIANAM",
+            "npsn": "10264508",
+            "nsm": "121212210013",
+            "id": 33133,
+            "statistic_num": "121212210013",
+            "institution_personnel_count": {
+                "institution_id": 33133,
+                "teacher_with_assignment": 1,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 1,
+                "teacher_without_assignment": 21,
+                "education_staff_without_assignment": 4,
+                "personnel_without_assignment_total": 25,
+                "personnel_teacher": 22,
+                "personnel_education_staff": 4,
+                "personnel_total": 26
+            }
+        },
+        {
+            "name": "MTSS YAPIS DESA PAKAM",
+            "npsn": "10264049",
+            "nsm": "121212210018",
+            "id": 33136,
+            "statistic_num": "121212210018",
+            "institution_personnel_count": {
+                "institution_id": 33136,
+                "teacher_with_assignment": 11,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 11,
+                "teacher_without_assignment": 3,
+                "education_staff_without_assignment": 1,
+                "personnel_without_assignment_total": 4,
+                "personnel_teacher": 14,
+                "personnel_education_staff": 1,
+                "personnel_total": 15
+            }
+        },
+        {
+            "name": "MTSS AL WASSHLIYAH PERUPUK",
+            "npsn": "60730273",
+            "nsm": "121212210019",
+            "id": 33138,
+            "statistic_num": "121212210019",
+            "institution_personnel_count": {
+                "institution_id": 33138,
+                "teacher_with_assignment": 1,
+                "education_staff_with_assignment": 1,
+                "personnel_with_assignment_total": 2,
+                "teacher_without_assignment": 12,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 12,
+                "personnel_teacher": 13,
+                "personnel_education_staff": 1,
+                "personnel_total": 14
+            }
+        },
+        {
+            "name": "MTSS NURUL ULUM SEI BEJANGKAR",
+            "npsn": "69726313",
+            "nsm": "121212210020",
+            "id": 33142,
+            "statistic_num": "121212210020",
+            "institution_personnel_count": {
+                "institution_id": 33142,
+                "teacher_with_assignment": 11,
+                "education_staff_with_assignment": 1,
+                "personnel_with_assignment_total": 12,
+                "teacher_without_assignment": 1,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 1,
+                "personnel_teacher": 12,
+                "personnel_education_staff": 1,
+                "personnel_total": 13
+            }
+        },
+        {
+            "name": "MTSS TAMANSISWA SIDOMULYO",
+            "npsn": "69725095",
+            "nsm": "121212210025",
+            "id": 33231,
+            "statistic_num": "121212210025",
+            "institution_personnel_count": {
+                "institution_id": 33231,
+                "teacher_with_assignment": 6,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 6,
+                "teacher_without_assignment": 8,
+                "education_staff_without_assignment": 1,
+                "personnel_without_assignment_total": 9,
+                "personnel_teacher": 14,
+                "personnel_education_staff": 1,
+                "personnel_total": 15
+            }
+        },
+        {
+            "name": "MTSS AL IHYA TANJUNG GADING",
+            "npsn": "10264071",
+            "nsm": "121212210026",
+            "id": 33232,
+            "statistic_num": "121212210026",
+            "institution_personnel_count": {
+                "institution_id": 33232,
+                "teacher_with_assignment": 11,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 11,
+                "teacher_without_assignment": 0,
+                "education_staff_without_assignment": 1,
+                "personnel_without_assignment_total": 1,
+                "personnel_teacher": 11,
+                "personnel_education_staff": 1,
+                "personnel_total": 12
+            }
+        },
+        {
+            "name": "MTSS NURUL YAQIN",
+            "npsn": "10264516",
+            "nsm": "121212210027",
+            "id": 33233,
+            "statistic_num": "121212210027",
+            "institution_personnel_count": {
+                "institution_id": 33233,
+                "teacher_with_assignment": 11,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 12,
+                "teacher_without_assignment": 0,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 0,
+                "personnel_teacher": 11,
+                "personnel_education_staff": 0,
+                "personnel_total": 11
+            }
+        },
+        {
+            "name": "MTSS NURHASANAH",
+            "npsn": "10264521",
+            "nsm": "121212210028",
+            "id": 33235,
+            "statistic_num": "121212210028",
+            "institution_personnel_count": {
+                "institution_id": 33235,
+                "teacher_with_assignment": 7,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 7,
+                "teacher_without_assignment": 1,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 1,
+                "personnel_teacher": 8,
+                "personnel_education_staff": 0,
+                "personnel_total": 8
+            }
+        },
+        {
+            "name": "MTSS SURYA AGUNG",
+            "npsn": "10264070",
+            "nsm": "121212210021",
+            "id": 33237,
+            "statistic_num": "121212210021",
+            "institution_personnel_count": {
+                "institution_id": 33237,
+                "teacher_with_assignment": 12,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 12,
+                "teacher_without_assignment": 0,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 0,
+                "personnel_teacher": 12,
+                "personnel_education_staff": 0,
+                "personnel_total": 12
+            }
+        },
+        {
+            "name": "MTSS AL-IRSYAD",
+            "npsn": "10264513",
+            "nsm": "121212210022",
+            "id": 33238,
+            "statistic_num": "121212210022",
+            "institution_personnel_count": {
+                "institution_id": 33238,
+                "teacher_with_assignment": 5,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 5,
+                "teacher_without_assignment": 6,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 6,
+                "personnel_teacher": 11,
+                "personnel_education_staff": 0,
+                "personnel_total": 11
+            }
+        },
+        {
+            "name": "MTSS HUSNUL KHOTIMAH",
+            "npsn": "10264084",
+            "nsm": "121212210023",
+            "id": 33239,
+            "statistic_num": "121212210023",
+            "institution_personnel_count": {
+                "institution_id": 33239,
+                "teacher_with_assignment": 10,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 10,
+                "teacher_without_assignment": 0,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 0,
+                "personnel_teacher": 10,
+                "personnel_education_staff": 0,
+                "personnel_total": 10
+            }
+        },
+        {
+            "name": "MTSS AL WASHLIYAH LIMA LARAS",
+            "npsn": "10264085",
+            "nsm": "121212210024",
+            "id": 33240,
+            "statistic_num": "121212210024",
+            "institution_personnel_count": {
+                "institution_id": 33240,
+                "teacher_with_assignment": 14,
+                "education_staff_with_assignment": 1,
+                "personnel_with_assignment_total": 15,
+                "teacher_without_assignment": 1,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 1,
+                "personnel_teacher": 15,
+                "personnel_education_staff": 1,
+                "personnel_total": 16
+            }
+        },
+        {
+            "name": "MTSS AL AZHAR",
+            "npsn": "10264517",
+            "nsm": "121212210029",
+            "id": 33248,
+            "statistic_num": "121212210029",
+            "institution_personnel_count": {
+                "institution_id": 33248,
+                "teacher_with_assignment": 0,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 0,
+                "teacher_without_assignment": 9,
+                "education_staff_without_assignment": 1,
+                "personnel_without_assignment_total": 10,
+                "personnel_teacher": 9,
+                "personnel_education_staff": 1,
+                "personnel_total": 10
+            }
+        },
+        {
+            "name": "MTSS TELADAN III BAGAN BARU",
+            "npsn": "10264523",
+            "nsm": "121212210030",
+            "id": 33259,
+            "statistic_num": "121212210030",
+            "institution_personnel_count": {
+                "institution_id": 33259,
+                "teacher_with_assignment": 12,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 12,
+                "teacher_without_assignment": 1,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 1,
+                "personnel_teacher": 13,
+                "personnel_education_staff": 0,
+                "personnel_total": 13
+            }
+        },
+        {
+            "name": "MTSS AL-WASHLIYAH SIMPANG GAMBUS",
+            "npsn": "10264081",
+            "nsm": "121212210031",
+            "id": 33260,
+            "statistic_num": "121212210031",
+            "institution_personnel_count": {
+                "institution_id": 33260,
+                "teacher_with_assignment": 1,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 1,
+                "teacher_without_assignment": 15,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 15,
+                "personnel_teacher": 16,
+                "personnel_education_staff": 0,
+                "personnel_total": 16
+            }
+        },
+        {
+            "name": "MTSS AL-IKHLAS",
+            "npsn": "10264518",
+            "nsm": "121212210036",
+            "id": 33261,
+            "statistic_num": "121212210036",
+            "institution_personnel_count": {
+                "institution_id": 33261,
+                "teacher_with_assignment": 6,
+                "education_staff_with_assignment": 1,
+                "personnel_with_assignment_total": 7,
+                "teacher_without_assignment": 2,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 2,
+                "personnel_teacher": 8,
+                "personnel_education_staff": 1,
+                "personnel_total": 9
+            }
+        },
+        {
+            "name": "MTSS CITRA ABDI NEGORO",
+            "npsn": "10264065",
+            "nsm": "121212210037",
+            "id": 33262,
+            "statistic_num": "121212210037",
+            "institution_personnel_count": {
+                "institution_id": 33262,
+                "teacher_with_assignment": 17,
+                "education_staff_with_assignment": 2,
+                "personnel_with_assignment_total": 19,
+                "teacher_without_assignment": 2,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 2,
+                "personnel_teacher": 19,
+                "personnel_education_staff": 2,
+                "personnel_total": 21
+            }
+        },
+        {
+            "name": "MTSS BINA BANGSA MANGKAI LAMA",
+            "npsn": "10264046",
+            "nsm": "121212210038",
+            "id": 33263,
+            "statistic_num": "121212210038",
+            "institution_personnel_count": {
+                "institution_id": 33263,
+                "teacher_with_assignment": 1,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 1,
+                "teacher_without_assignment": 10,
+                "education_staff_without_assignment": 1,
+                "personnel_without_assignment_total": 11,
+                "personnel_teacher": 11,
+                "personnel_education_staff": 1,
+                "personnel_total": 12
+            }
+        },
+        {
+            "name": "MTSS AL-WASHLIYAH BULAN-BULAN",
+            "npsn": "10264509",
+            "nsm": "121212210039",
+            "id": 33264,
+            "statistic_num": "121212210039",
+            "institution_personnel_count": {
+                "institution_id": 33264,
+                "teacher_with_assignment": 12,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 12,
+                "teacher_without_assignment": 2,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 2,
+                "personnel_teacher": 14,
+                "personnel_education_staff": 0,
+                "personnel_total": 14
+            }
+        },
+        {
+            "name": "MTSS ISLAMIYAH TANJUNG KASAU",
+            "npsn": "10264519",
+            "nsm": "121212210032",
+            "id": 33265,
+            "statistic_num": "121212210032",
+            "institution_personnel_count": {
+                "institution_id": 33265,
+                "teacher_with_assignment": 11,
+                "education_staff_with_assignment": 2,
+                "personnel_with_assignment_total": 13,
+                "teacher_without_assignment": 2,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 2,
+                "personnel_teacher": 13,
+                "personnel_education_staff": 2,
+                "personnel_total": 15
+            }
+        },
+        {
+            "name": "MTSS HIDAYATUL ULUMIYAH",
+            "npsn": "10264086",
+            "nsm": "121212210033",
+            "id": 33266,
+            "statistic_num": "121212210033",
+            "institution_personnel_count": {
+                "institution_id": 33266,
+                "teacher_with_assignment": 0,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 0,
+                "teacher_without_assignment": 13,
+                "education_staff_without_assignment": 1,
+                "personnel_without_assignment_total": 14,
+                "personnel_teacher": 13,
+                "personnel_education_staff": 1,
+                "personnel_total": 14
+            }
+        },
+        {
+            "name": "MTSS AMALUL IKHLAS MEDANG",
+            "npsn": "10260987",
+            "nsm": "121212210034",
+            "id": 33267,
+            "statistic_num": "121212210034",
+            "institution_personnel_count": {
+                "institution_id": 33267,
+                "teacher_with_assignment": 9,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 9,
+                "teacher_without_assignment": 5,
+                "education_staff_without_assignment": 1,
+                "personnel_without_assignment_total": 6,
+                "personnel_teacher": 14,
+                "personnel_education_staff": 1,
+                "personnel_total": 15
+            }
+        },
+        {
+            "name": "MTSS YPK SIDOMULYO",
+            "npsn": "10264051",
+            "nsm": "121212210035",
+            "id": 33268,
+            "statistic_num": "121212210035",
+            "institution_personnel_count": {
+                "institution_id": 33268,
+                "teacher_with_assignment": 16,
+                "education_staff_with_assignment": 3,
+                "personnel_with_assignment_total": 19,
+                "teacher_without_assignment": 1,
+                "education_staff_without_assignment": 1,
+                "personnel_without_assignment_total": 2,
+                "personnel_teacher": 17,
+                "personnel_education_staff": 4,
+                "personnel_total": 21
+            }
+        },
+        {
+            "name": "MTSS AL-MUKHLISIN",
+            "npsn": "60730120",
+            "nsm": "121212210040",
+            "id": 33280,
+            "statistic_num": "121212210040",
+            "institution_personnel_count": {
+                "institution_id": 33280,
+                "teacher_with_assignment": 0,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 0,
+                "teacher_without_assignment": 23,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 23,
+                "personnel_teacher": 23,
+                "personnel_education_staff": 0,
+                "personnel_total": 23
+            }
+        },
+        {
+            "name": "MTSS JABAL HINDI",
+            "npsn": "69895066",
+            "nsm": "121212210041",
+            "id": 33281,
+            "statistic_num": "121212210041",
+            "institution_personnel_count": {
+                "institution_id": 33281,
+                "teacher_with_assignment": 8,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 11,
+                "teacher_without_assignment": 1,
+                "education_staff_without_assignment": 1,
+                "personnel_without_assignment_total": 3,
+                "personnel_teacher": 9,
+                "personnel_education_staff": 1,
+                "personnel_total": 10
+            }
+        },
+        {
+            "name": "MAS AL MUMTAZ BATU BARA",
+            "npsn": "70006437",
+            "nsm": "131212190036",
+            "id": 58180,
+            "statistic_num": "131212190036",
+            "institution_personnel_count": {
+                "institution_id": 58180,
+                "teacher_with_assignment": 4,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 4,
+                "teacher_without_assignment": 8,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 8,
+                "personnel_teacher": 12,
+                "personnel_education_staff": 0,
+                "personnel_total": 12
+            }
+        },
+        {
+            "name": "MAS DARUL ILMI",
+            "npsn": "69994194",
+            "nsm": "131212190020",
+            "id": 58194,
+            "statistic_num": "131212190020",
+            "institution_personnel_count": {
+                "institution_id": 58194,
+                "teacher_with_assignment": 8,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 8,
+                "teacher_without_assignment": 2,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 2,
+                "personnel_teacher": 10,
+                "personnel_education_staff": 0,
+                "personnel_total": 10
+            }
+        },
+        {
+            "name": "MAS JABAL HINDI",
+            "npsn": "69955616",
+            "nsm": "131212190019",
+            "id": 58204,
+            "statistic_num": "131212190019",
+            "institution_personnel_count": {
+                "institution_id": 58204,
+                "teacher_with_assignment": 1,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 1,
+                "teacher_without_assignment": 13,
+                "education_staff_without_assignment": 2,
+                "personnel_without_assignment_total": 15,
+                "personnel_teacher": 14,
+                "personnel_education_staff": 2,
+                "personnel_total": 16
+            }
+        },
+        {
+            "name": "MAS AL-WASHLIYAH PANGKALAN DODEK",
+            "npsn": "10264699",
+            "nsm": "131212210010",
+            "id": 60010,
+            "statistic_num": "131212210010",
+            "institution_personnel_count": {
+                "institution_id": 60010,
+                "teacher_with_assignment": 9,
+                "education_staff_with_assignment": 1,
+                "personnel_with_assignment_total": 10,
+                "teacher_without_assignment": 0,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 0,
+                "personnel_teacher": 9,
+                "personnel_education_staff": 1,
+                "personnel_total": 10
+            }
+        },
+        {
+            "name": "MAS HUSNUL KHOTIMAH",
+            "npsn": "10264706",
+            "nsm": "131212210012",
+            "id": 60011,
+            "statistic_num": "131212210012",
+            "institution_personnel_count": {
+                "institution_id": 60011,
+                "teacher_with_assignment": 11,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 11,
+                "teacher_without_assignment": 0,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 0,
+                "personnel_teacher": 11,
+                "personnel_education_staff": 0,
+                "personnel_total": 11
+            }
+        },
+        {
+            "name": "MAS AL-WASHLIYAH DESA PAKAM",
+            "npsn": "69728149",
+            "nsm": "131212210011",
+            "id": 60012,
+            "statistic_num": "131212210011",
+            "institution_personnel_count": {
+                "institution_id": 60012,
+                "teacher_with_assignment": 24,
+                "education_staff_with_assignment": 3,
+                "personnel_with_assignment_total": 27,
+                "teacher_without_assignment": 0,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 0,
+                "personnel_teacher": 24,
+                "personnel_education_staff": 3,
+                "personnel_total": 27
+            }
+        },
+        {
+            "name": "MAS AL-MUKHLISHIN",
+            "npsn": "10264707",
+            "nsm": "131212210014",
+            "id": 60013,
+            "statistic_num": "131212210014",
+            "institution_personnel_count": {
+                "institution_id": 60013,
+                "teacher_with_assignment": 24,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 24,
+                "teacher_without_assignment": 8,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 8,
+                "personnel_teacher": 32,
+                "personnel_education_staff": 0,
+                "personnel_total": 32
+            }
+        },
+        {
+            "name": "MAS AL-IRSYAD",
+            "npsn": "10264700",
+            "nsm": "131212210013",
+            "id": 60014,
+            "statistic_num": "131212210013",
+            "institution_personnel_count": {
+                "institution_id": 60014,
+                "teacher_with_assignment": 8,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 8,
+                "teacher_without_assignment": 2,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 2,
+                "personnel_teacher": 10,
+                "personnel_education_staff": 0,
+                "personnel_total": 10
+            }
+        },
+        {
+            "name": "MAS AL-WASHLIYAH SIAJAM",
+            "npsn": "10264701",
+            "nsm": "131212210007",
+            "id": 60017,
+            "statistic_num": "131212210007",
+            "institution_personnel_count": {
+                "institution_id": 60017,
+                "teacher_with_assignment": 2,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 2,
+                "teacher_without_assignment": 10,
+                "education_staff_without_assignment": 1,
+                "personnel_without_assignment_total": 11,
+                "personnel_teacher": 12,
+                "personnel_education_staff": 1,
+                "personnel_total": 13
+            }
+        },
+        {
+            "name": "MAS AL-WASHLIYAH KEDAISIANAM",
+            "npsn": "10264698",
+            "nsm": "131212210006",
+            "id": 60018,
+            "statistic_num": "131212210006",
+            "institution_personnel_count": {
+                "institution_id": 60018,
+                "teacher_with_assignment": 0,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 0,
+                "teacher_without_assignment": 37,
+                "education_staff_without_assignment": 4,
+                "personnel_without_assignment_total": 41,
+                "personnel_teacher": 37,
+                "personnel_education_staff": 4,
+                "personnel_total": 41
+            }
+        },
+        {
+            "name": "MAS MULIA SEI BALAI",
+            "npsn": "10264702",
+            "nsm": "131212210009",
+            "id": 60019,
+            "statistic_num": "131212210009",
+            "institution_personnel_count": {
+                "institution_id": 60019,
+                "teacher_with_assignment": 14,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 14,
+                "teacher_without_assignment": 3,
+                "education_staff_without_assignment": 1,
+                "personnel_without_assignment_total": 4,
+                "personnel_teacher": 17,
+                "personnel_education_staff": 1,
+                "personnel_total": 18
+            }
+        },
+        {
+            "name": "MAS AL-WASHLIYAH PETATAL",
+            "npsn": "10264704",
+            "nsm": "131212210008",
+            "id": 60020,
+            "statistic_num": "131212210008",
+            "institution_personnel_count": {
+                "institution_id": 60020,
+                "teacher_with_assignment": 15,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 15,
+                "teacher_without_assignment": 1,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 1,
+                "personnel_teacher": 16,
+                "personnel_education_staff": 0,
+                "personnel_total": 16
+            }
+        },
+        {
+            "name": "MAS AL-WASHLIYAH INDRAPURA",
+            "npsn": "10264695",
+            "nsm": "131212210001",
+            "id": 60021,
+            "statistic_num": "131212210001",
+            "institution_personnel_count": {
+                "institution_id": 60021,
+                "teacher_with_assignment": 1,
+                "education_staff_with_assignment": 3,
+                "personnel_with_assignment_total": 4,
+                "teacher_without_assignment": 18,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 18,
+                "personnel_teacher": 19,
+                "personnel_education_staff": 3,
+                "personnel_total": 22
+            }
+        },
+        {
+            "name": "MAS CIPTA SIMPANG DOLOK",
+            "npsn": "10264697",
+            "nsm": "131212210003",
+            "id": 60022,
+            "statistic_num": "131212210003",
+            "institution_personnel_count": {
+                "institution_id": 60022,
+                "teacher_with_assignment": 2,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 2,
+                "teacher_without_assignment": 15,
+                "education_staff_without_assignment": 5,
+                "personnel_without_assignment_total": 20,
+                "personnel_teacher": 17,
+                "personnel_education_staff": 5,
+                "personnel_total": 22
+            }
+        },
+        {
+            "name": "MAS TELADAN UJUNG KUBU",
+            "npsn": "69728151",
+            "nsm": "131212210002",
+            "id": 60024,
+            "statistic_num": "131212210002",
+            "institution_personnel_count": {
+                "institution_id": 60024,
+                "teacher_with_assignment": 30,
+                "education_staff_with_assignment": 2,
+                "personnel_with_assignment_total": 32,
+                "teacher_without_assignment": 2,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 2,
+                "personnel_teacher": 32,
+                "personnel_education_staff": 2,
+                "personnel_total": 34
+            }
+        },
+        {
+            "name": "MAS YAPI SIPARE-PARE",
+            "npsn": "10264696",
+            "nsm": "131212210005",
+            "id": 60025,
+            "statistic_num": "131212210005",
+            "institution_personnel_count": {
+                "institution_id": 60025,
+                "teacher_with_assignment": 0,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 0,
+                "teacher_without_assignment": 15,
+                "education_staff_without_assignment": 1,
+                "personnel_without_assignment_total": 16,
+                "personnel_teacher": 15,
+                "personnel_education_staff": 1,
+                "personnel_total": 16
+            }
+        },
+        {
+            "name": "MAS AL-WASHLIYAH TANJUNG TIRAM",
+            "npsn": "10264703",
+            "nsm": "131212210004",
+            "id": 60027,
+            "statistic_num": "131212210004",
+            "institution_personnel_count": {
+                "institution_id": 60027,
+                "teacher_with_assignment": 26,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 26,
+                "teacher_without_assignment": 2,
+                "education_staff_without_assignment": 3,
+                "personnel_without_assignment_total": 5,
+                "personnel_teacher": 28,
+                "personnel_education_staff": 3,
+                "personnel_total": 31
+            }
+        },
+        {
+            "name": "MIS FATAHILLAH SEI BALAI",
+            "npsn": "60727250",
+            "nsm": "111212210108",
+            "id": 62742,
+            "statistic_num": "111212210108",
+            "institution_personnel_count": {
+                "institution_id": 62742,
+                "teacher_with_assignment": 13,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 13,
+                "teacher_without_assignment": 2,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 2,
+                "personnel_teacher": 15,
+                "personnel_education_staff": 0,
+                "personnel_total": 15
+            }
+        },
+        {
+            "name": "MIS AL MUKMIN SEPAKAT",
+            "npsn": "60727252",
+            "nsm": "111212210113",
+            "id": 62746,
+            "statistic_num": "111212210113",
+            "institution_personnel_count": {
+                "institution_id": 62746,
+                "teacher_with_assignment": 0,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 0,
+                "teacher_without_assignment": 7,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 7,
+                "personnel_teacher": 7,
+                "personnel_education_staff": 0,
+                "personnel_total": 7
+            }
+        },
+        {
+            "name": "MIS WAKAF AL MUKHLISHIN",
+            "npsn": "69894579",
+            "nsm": "111212210032",
+            "id": 63371,
+            "statistic_num": "111212210032",
+            "institution_personnel_count": {
+                "institution_id": 63371,
+                "teacher_with_assignment": 0,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 0,
+                "teacher_without_assignment": 18,
+                "education_staff_without_assignment": 1,
+                "personnel_without_assignment_total": 19,
+                "personnel_teacher": 18,
+                "personnel_education_staff": 1,
+                "personnel_total": 19
+            }
+        },
+        {
+            "name": "MIS AL AZZURA TANAH MERAH",
+            "npsn": "60727249",
+            "nsm": "111212210031",
+            "id": 63372,
+            "statistic_num": "111212210031",
+            "institution_personnel_count": {
+                "institution_id": 63372,
+                "teacher_with_assignment": 10,
+                "education_staff_with_assignment": 1,
+                "personnel_with_assignment_total": 12,
+                "teacher_without_assignment": 0,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 0,
+                "personnel_teacher": 10,
+                "personnel_education_staff": 1,
+                "personnel_total": 11
+            }
+        },
+        {
+            "name": "MIS PESANTREN AL-IKHLAS",
+            "npsn": "60704017",
+            "nsm": "111212210030",
+            "id": 63373,
+            "statistic_num": "111212210030",
+            "institution_personnel_count": {
+                "institution_id": 63373,
+                "teacher_with_assignment": 3,
+                "education_staff_with_assignment": 1,
+                "personnel_with_assignment_total": 4,
+                "teacher_without_assignment": 6,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 6,
+                "personnel_teacher": 9,
+                "personnel_education_staff": 1,
+                "personnel_total": 10
+            }
+        },
+        {
+            "name": "MIS AL MUAWWANAH",
+            "npsn": "60704010",
+            "nsm": "111212210029",
+            "id": 63374,
+            "statistic_num": "111212210029",
+            "institution_personnel_count": {
+                "institution_id": 63374,
+                "teacher_with_assignment": 2,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 2,
+                "teacher_without_assignment": 6,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 6,
+                "personnel_teacher": 8,
+                "personnel_education_staff": 0,
+                "personnel_total": 8
+            }
+        },
+        {
+            "name": "MIS AL MAUIZHOH",
+            "npsn": "60704032",
+            "nsm": "111212210027",
+            "id": 63375,
+            "statistic_num": "111212210027",
+            "institution_personnel_count": {
+                "institution_id": 63375,
+                "teacher_with_assignment": 9,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 9,
+                "teacher_without_assignment": 0,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 0,
+                "personnel_teacher": 9,
+                "personnel_education_staff": 0,
+                "personnel_total": 9
+            }
+        },
+        {
+            "name": "MIS PESANTREN AL-AZHAR",
+            "npsn": "60704016",
+            "nsm": "111212210026",
+            "id": 63376,
+            "statistic_num": "111212210026",
+            "institution_personnel_count": {
+                "institution_id": 63376,
+                "teacher_with_assignment": 4,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 4,
+                "teacher_without_assignment": 5,
+                "education_staff_without_assignment": 2,
+                "personnel_without_assignment_total": 7,
+                "personnel_teacher": 9,
+                "personnel_education_staff": 2,
+                "personnel_total": 11
+            }
+        },
+        {
+            "name": "MIS DAAR AL MUHSININ",
+            "npsn": "60704031",
+            "nsm": "111212210025",
+            "id": 63377,
+            "statistic_num": "111212210025",
+            "institution_personnel_count": {
+                "institution_id": 63377,
+                "teacher_with_assignment": 12,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 13,
+                "teacher_without_assignment": 0,
+                "education_staff_without_assignment": 1,
+                "personnel_without_assignment_total": 1,
+                "personnel_teacher": 12,
+                "personnel_education_staff": 1,
+                "personnel_total": 13
+            }
+        },
+        {
+            "name": "MIS AL-WASHLIYAH TG MULIA",
+            "npsn": "60704034",
+            "nsm": "111212210024",
+            "id": 63378,
+            "statistic_num": "111212210024",
+            "institution_personnel_count": {
+                "institution_id": 63378,
+                "teacher_with_assignment": 0,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 0,
+                "teacher_without_assignment": 9,
+                "education_staff_without_assignment": 1,
+                "personnel_without_assignment_total": 10,
+                "personnel_teacher": 9,
+                "personnel_education_staff": 1,
+                "personnel_total": 10
+            }
+        },
+        {
+            "name": "MIS SUHAIRIYAH TALAWI",
+            "npsn": "69956080",
+            "nsm": "111212210041",
+            "id": 63379,
+            "statistic_num": "111212210041",
+            "institution_personnel_count": {
+                "institution_id": 63379,
+                "teacher_with_assignment": 1,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 1,
+                "teacher_without_assignment": 16,
+                "education_staff_without_assignment": 1,
+                "personnel_without_assignment_total": 17,
+                "personnel_teacher": 17,
+                "personnel_education_staff": 1,
+                "personnel_total": 18
+            }
+        },
+        {
+            "name": "MIS BILGE PAGURAWAN",
+            "npsn": "69956082",
+            "nsm": "111212210040",
+            "id": 63380,
+            "statistic_num": "111212210040",
+            "institution_personnel_count": {
+                "institution_id": 63380,
+                "teacher_with_assignment": 4,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 4,
+                "teacher_without_assignment": 12,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 12,
+                "personnel_teacher": 16,
+                "personnel_education_staff": 0,
+                "personnel_total": 16
+            }
+        },
+        {
+            "name": "MIS AL-WASHLIYAH GUNTUNG",
+            "npsn": "69956079",
+            "nsm": "111212210039",
+            "id": 63381,
+            "statistic_num": "111212210039",
+            "institution_personnel_count": {
+                "institution_id": 63381,
+                "teacher_with_assignment": 6,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 6,
+                "teacher_without_assignment": 2,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 2,
+                "personnel_teacher": 8,
+                "personnel_education_staff": 0,
+                "personnel_total": 8
+            }
+        },
+        {
+            "name": "MIS KHOLIJAH MUKHTAR II",
+            "npsn": "69956081",
+            "nsm": "111212210038",
+            "id": 63382,
+            "statistic_num": "111212210038",
+            "institution_personnel_count": {
+                "institution_id": 63382,
+                "teacher_with_assignment": 9,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 9,
+                "teacher_without_assignment": 2,
+                "education_staff_without_assignment": 1,
+                "personnel_without_assignment_total": 3,
+                "personnel_teacher": 11,
+                "personnel_education_staff": 1,
+                "personnel_total": 12
+            }
+        },
+        {
+            "name": "MIS NURUL IKHLAS",
+            "npsn": "69894578",
+            "nsm": "111212210037",
+            "id": 63383,
+            "statistic_num": "111212210037",
+            "institution_personnel_count": {
+                "institution_id": 63383,
+                "teacher_with_assignment": 9,
+                "education_staff_with_assignment": 1,
+                "personnel_with_assignment_total": 10,
+                "teacher_without_assignment": 3,
+                "education_staff_without_assignment": 1,
+                "personnel_without_assignment_total": 4,
+                "personnel_teacher": 12,
+                "personnel_education_staff": 2,
+                "personnel_total": 14
+            }
+        },
+        {
+            "name": "MIS JABAL HINDI",
+            "npsn": "69894577",
+            "nsm": "111212210036",
+            "id": 63384,
+            "statistic_num": "111212210036",
+            "institution_personnel_count": {
+                "institution_id": 63384,
+                "teacher_with_assignment": 1,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 1,
+                "teacher_without_assignment": 10,
+                "education_staff_without_assignment": 1,
+                "personnel_without_assignment_total": 11,
+                "personnel_teacher": 11,
+                "personnel_education_staff": 1,
+                "personnel_total": 12
+            }
+        },
+        {
+            "name": "MIS KHOLIJAH MUKHTAR",
+            "npsn": "69854413",
+            "nsm": "111212210034",
+            "id": 63385,
+            "statistic_num": "111212210034",
+            "institution_personnel_count": {
+                "institution_id": 63385,
+                "teacher_with_assignment": 10,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 10,
+                "teacher_without_assignment": 2,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 2,
+                "personnel_teacher": 12,
+                "personnel_education_staff": 0,
+                "personnel_total": 12
+            }
+        },
+        {
+            "name": "MIS SYEH MUHAMMAD ZEIN DESA LALANG",
+            "npsn": "69881827",
+            "nsm": "111212210033",
+            "id": 63386,
+            "statistic_num": "111212210033",
+            "institution_personnel_count": {
+                "institution_id": 63386,
+                "teacher_with_assignment": 10,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 10,
+                "teacher_without_assignment": 3,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 3,
+                "personnel_teacher": 13,
+                "personnel_education_staff": 0,
+                "personnel_total": 13
+            }
+        },
+        {
+            "name": "MIS ISLAMIYAH LAUT TADOR",
+            "npsn": "60704019",
+            "nsm": "111212210010",
+            "id": 63387,
+            "statistic_num": "111212210010",
+            "institution_personnel_count": {
+                "institution_id": 63387,
+                "teacher_with_assignment": 11,
+                "education_staff_with_assignment": 1,
+                "personnel_with_assignment_total": 12,
+                "teacher_without_assignment": 1,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 1,
+                "personnel_teacher": 12,
+                "personnel_education_staff": 1,
+                "personnel_total": 13
+            }
+        },
+        {
+            "name": "MIS DARUL HIKMAH",
+            "npsn": "60704027",
+            "nsm": "111212210009",
+            "id": 63391,
+            "statistic_num": "111212210009",
+            "institution_personnel_count": {
+                "institution_id": 63391,
+                "teacher_with_assignment": 1,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 1,
+                "teacher_without_assignment": 12,
+                "education_staff_without_assignment": 1,
+                "personnel_without_assignment_total": 13,
+                "personnel_teacher": 13,
+                "personnel_education_staff": 1,
+                "personnel_total": 14
+            }
+        },
+        {
+            "name": "MIS TELADAN II PEMATANG RAMBAI",
+            "npsn": "60704026",
+            "nsm": "111212210008",
+            "id": 63392,
+            "statistic_num": "111212210008",
+            "institution_personnel_count": {
+                "institution_id": 63392,
+                "teacher_with_assignment": 13,
+                "education_staff_with_assignment": 2,
+                "personnel_with_assignment_total": 15,
+                "teacher_without_assignment": 1,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 1,
+                "personnel_teacher": 14,
+                "personnel_education_staff": 2,
+                "personnel_total": 16
+            }
+        },
+        {
+            "name": "MIS TELADAN UJUNG KUBU",
+            "npsn": "60704025",
+            "nsm": "111212210007",
+            "id": 63393,
+            "statistic_num": "111212210007",
+            "institution_personnel_count": {
+                "institution_id": 63393,
+                "teacher_with_assignment": 16,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 16,
+                "teacher_without_assignment": 2,
+                "education_staff_without_assignment": 1,
+                "personnel_without_assignment_total": 3,
+                "personnel_teacher": 18,
+                "personnel_education_staff": 1,
+                "personnel_total": 19
+            }
+        },
+        {
+            "name": "MIS MUHAMMADIYAH SIMODONG",
+            "npsn": "60704018",
+            "nsm": "111212210006",
+            "id": 63394,
+            "statistic_num": "111212210006",
+            "institution_personnel_count": {
+                "institution_id": 63394,
+                "teacher_with_assignment": 9,
+                "education_staff_with_assignment": 1,
+                "personnel_with_assignment_total": 10,
+                "teacher_without_assignment": 0,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 0,
+                "personnel_teacher": 9,
+                "personnel_education_staff": 1,
+                "personnel_total": 10
+            }
+        },
+        {
+            "name": "MIS AL-WASHLIYAH BANDAR SONO",
+            "npsn": "60704024",
+            "nsm": "111212210005",
+            "id": 63395,
+            "statistic_num": "111212210005",
+            "institution_personnel_count": {
+                "institution_id": 63395,
+                "teacher_with_assignment": 6,
+                "education_staff_with_assignment": 1,
+                "personnel_with_assignment_total": 7,
+                "teacher_without_assignment": 7,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 7,
+                "personnel_teacher": 13,
+                "personnel_education_staff": 1,
+                "personnel_total": 14
+            }
+        },
+        {
+            "name": "MIS AL-WASHLIYAH BAGAN DALAM",
+            "npsn": "60704023",
+            "nsm": "111212210004",
+            "id": 63396,
+            "statistic_num": "111212210004",
+            "institution_personnel_count": {
+                "institution_id": 63396,
+                "teacher_with_assignment": 11,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 11,
+                "teacher_without_assignment": 0,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 0,
+                "personnel_teacher": 11,
+                "personnel_education_staff": 0,
+                "personnel_total": 11
+            }
+        },
+        {
+            "name": "MIS AL-WASHLIYAH DESA DURIAN",
+            "npsn": "60704013",
+            "nsm": "111212210003",
+            "id": 63398,
+            "statistic_num": "111212210003",
+            "institution_personnel_count": {
+                "institution_id": 63398,
+                "teacher_with_assignment": 1,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 1,
+                "teacher_without_assignment": 9,
+                "education_staff_without_assignment": 1,
+                "personnel_without_assignment_total": 10,
+                "personnel_teacher": 10,
+                "personnel_education_staff": 1,
+                "personnel_total": 11
+            }
+        },
+        {
+            "name": "MIS AL WASHLIYAH SKB PAHANG",
+            "npsn": "60727251",
+            "nsm": "111212210002",
+            "id": 63399,
+            "statistic_num": "111212210002",
+            "institution_personnel_count": {
+                "institution_id": 63399,
+                "teacher_with_assignment": 9,
+                "education_staff_with_assignment": 2,
+                "personnel_with_assignment_total": 11,
+                "teacher_without_assignment": 1,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 1,
+                "personnel_teacher": 10,
+                "personnel_education_staff": 2,
+                "personnel_total": 12
+            }
+        },
+        {
+            "name": "MIS GUPPI TANJUNG KUBAH",
+            "npsn": "60704003",
+            "nsm": "111212210001",
+            "id": 63401,
+            "statistic_num": "111212210001",
+            "institution_personnel_count": {
+                "institution_id": 63401,
+                "teacher_with_assignment": 1,
+                "education_staff_with_assignment": 1,
+                "personnel_with_assignment_total": 2,
+                "teacher_without_assignment": 8,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 8,
+                "personnel_teacher": 9,
+                "personnel_education_staff": 1,
+                "personnel_total": 10
+            }
+        },
+        {
+            "name": "MIS ISLAMIYAH SENTANG",
+            "npsn": "60704030",
+            "nsm": "111212210021",
+            "id": 63405,
+            "statistic_num": "111212210021",
+            "institution_personnel_count": {
+                "institution_id": 63405,
+                "teacher_with_assignment": 3,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 3,
+                "teacher_without_assignment": 10,
+                "education_staff_without_assignment": 2,
+                "personnel_without_assignment_total": 12,
+                "personnel_teacher": 13,
+                "personnel_education_staff": 2,
+                "personnel_total": 15
+            }
+        },
+        {
+            "name": "MIS AL IKHLAS PANGKALAN DODEK",
+            "npsn": "60704012",
+            "nsm": "111212210019",
+            "id": 63418,
+            "statistic_num": "111212210019",
+            "institution_personnel_count": {
+                "institution_id": 63418,
+                "teacher_with_assignment": 8,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 8,
+                "teacher_without_assignment": 1,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 1,
+                "personnel_teacher": 9,
+                "personnel_education_staff": 0,
+                "personnel_total": 9
+            }
+        },
+        {
+            "name": "MIS ISLAMIYAH TANJUNG SERI",
+            "npsn": "60704020",
+            "nsm": "111212210018",
+            "id": 63419,
+            "statistic_num": "111212210018",
+            "institution_personnel_count": {
+                "institution_id": 63419,
+                "teacher_with_assignment": 6,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 6,
+                "teacher_without_assignment": 7,
+                "education_staff_without_assignment": 1,
+                "personnel_without_assignment_total": 8,
+                "personnel_teacher": 13,
+                "personnel_education_staff": 1,
+                "personnel_total": 14
+            }
+        },
+        {
+            "name": "MIS NURUL YAQIN",
+            "npsn": "60704015",
+            "nsm": "111212210017",
+            "id": 63420,
+            "statistic_num": "111212210017",
+            "institution_personnel_count": {
+                "institution_id": 63420,
+                "teacher_with_assignment": 9,
+                "education_staff_with_assignment": 1,
+                "personnel_with_assignment_total": 10,
+                "teacher_without_assignment": 2,
+                "education_staff_without_assignment": 2,
+                "personnel_without_assignment_total": 4,
+                "personnel_teacher": 11,
+                "personnel_education_staff": 3,
+                "personnel_total": 14
+            }
+        },
+        {
+            "name": "MIS YAPI SIPARE PARE",
+            "npsn": "60704005",
+            "nsm": "111212210016",
+            "id": 63422,
+            "statistic_num": "111212210016",
+            "institution_personnel_count": {
+                "institution_id": 63422,
+                "teacher_with_assignment": 10,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 10,
+                "teacher_without_assignment": 1,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 1,
+                "personnel_teacher": 11,
+                "personnel_education_staff": 0,
+                "personnel_total": 11
+            }
+        },
+        {
+            "name": "MIS HUSNUL KHOTIMAH TANJUNG TIRAM",
+            "npsn": "60704029",
+            "nsm": "111212210015",
+            "id": 63423,
+            "statistic_num": "111212210015",
+            "institution_personnel_count": {
+                "institution_id": 63423,
+                "teacher_with_assignment": 7,
+                "education_staff_with_assignment": 1,
+                "personnel_with_assignment_total": 8,
+                "teacher_without_assignment": 1,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 1,
+                "personnel_teacher": 8,
+                "personnel_education_staff": 1,
+                "personnel_total": 9
+            }
+        },
+        {
+            "name": "MIS AL-WASHLIYAH KWALA SIKASIM",
+            "npsn": "60704014",
+            "nsm": "111212210014",
+            "id": 63425,
+            "statistic_num": "111212210014",
+            "institution_personnel_count": {
+                "institution_id": 63425,
+                "teacher_with_assignment": 11,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 11,
+                "teacher_without_assignment": 1,
+                "education_staff_without_assignment": 1,
+                "personnel_without_assignment_total": 2,
+                "personnel_teacher": 12,
+                "personnel_education_staff": 1,
+                "personnel_total": 13
+            }
+        },
+        {
+            "name": "MIS AL WASHLIYAH PANGKALAN DODEK",
+            "npsn": "60704011",
+            "nsm": "111212210013",
+            "id": 63427,
+            "statistic_num": "111212210013",
+            "institution_personnel_count": {
+                "institution_id": 63427,
+                "teacher_with_assignment": 14,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 14,
+                "teacher_without_assignment": 0,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 0,
+                "personnel_teacher": 14,
+                "personnel_education_staff": 0,
+                "personnel_total": 14
+            }
+        },
+        {
+            "name": "MIS TELADAN III",
+            "npsn": "60704028",
+            "nsm": "111212210012",
+            "id": 63429,
+            "statistic_num": "111212210012",
+            "institution_personnel_count": {
+                "institution_id": 63429,
+                "teacher_with_assignment": 7,
+                "education_staff_with_assignment": 1,
+                "personnel_with_assignment_total": 8,
+                "teacher_without_assignment": 0,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 0,
+                "personnel_teacher": 7,
+                "personnel_education_staff": 1,
+                "personnel_total": 8
+            }
+        },
+        {
+            "name": "MIS MUHAMMADIYAH ARAS",
+            "npsn": "60704004",
+            "nsm": "111212210011",
+            "id": 63431,
+            "statistic_num": "111212210011",
+            "institution_personnel_count": {
+                "institution_id": 63431,
+                "teacher_with_assignment": 1,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 1,
+                "teacher_without_assignment": 8,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 8,
+                "personnel_teacher": 9,
+                "personnel_education_staff": 0,
+                "personnel_total": 9
+            }
+        },
+        {
+            "name": "MIS CENDIKIA",
+            "npsn": "69982743",
+            "nsm": "111212190009",
+            "id": 68740,
+            "statistic_num": "111212190009",
+            "institution_personnel_count": {
+                "institution_id": 68740,
+                "teacher_with_assignment": 8,
+                "education_staff_with_assignment": 2,
+                "personnel_with_assignment_total": 10,
+                "teacher_without_assignment": 3,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 3,
+                "personnel_teacher": 11,
+                "personnel_education_staff": 2,
+                "personnel_total": 13
+            }
+        },
+        {
+            "name": "MIS AL-MUKHLISIN KUALA TANJUNG",
+            "npsn": "69982742",
+            "nsm": "111212190008",
+            "id": 68741,
+            "statistic_num": "111212190008",
+            "institution_personnel_count": {
+                "institution_id": 68741,
+                "teacher_with_assignment": 16,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 16,
+                "teacher_without_assignment": 8,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 8,
+                "personnel_teacher": 24,
+                "personnel_education_staff": 0,
+                "personnel_total": 24
+            }
+        },
+        {
+            "name": "MIS SYARIFAH",
+            "npsn": "69982741",
+            "nsm": "111212190007",
+            "id": 68742,
+            "statistic_num": "111212190007",
+            "institution_personnel_count": {
+                "institution_id": 68742,
+                "teacher_with_assignment": 6,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 6,
+                "teacher_without_assignment": 2,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 2,
+                "personnel_teacher": 8,
+                "personnel_education_staff": 0,
+                "personnel_total": 8
+            }
+        },
+        {
+            "name": "MIS ASY-SYA'UFI MUNIROH",
+            "npsn": "70009503",
+            "nsm": "111212190010",
+            "id": 68770,
+            "statistic_num": "111212190010",
+            "institution_personnel_count": {
+                "institution_id": 68770,
+                "teacher_with_assignment": 0,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 0,
+                "teacher_without_assignment": 13,
+                "education_staff_without_assignment": 1,
+                "personnel_without_assignment_total": 14,
+                "personnel_teacher": 13,
+                "personnel_education_staff": 1,
+                "personnel_total": 14
+            }
+        },
+        {
+            "name": "MIS AL WASHLIYAH KUALA TANJUNG",
+            "npsn": "60704021",
+            "nsm": "111212190033",
+            "id": 68817,
+            "statistic_num": "111212190033",
+            "institution_personnel_count": {
+                "institution_id": 68817,
+                "teacher_with_assignment": 14,
+                "education_staff_with_assignment": 1,
+                "personnel_with_assignment_total": 15,
+                "teacher_without_assignment": 0,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 0,
+                "personnel_teacher": 14,
+                "personnel_education_staff": 1,
+                "personnel_total": 15
+            }
+        },
+        {
+            "name": "MIS YAMUNDA LUBUK BESAR",
+            "npsn": "60704009",
+            "nsm": "111212190032",
+            "id": 68819,
+            "statistic_num": "111212190032",
+            "institution_personnel_count": {
+                "institution_id": 68819,
+                "teacher_with_assignment": 7,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 7,
+                "teacher_without_assignment": 1,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 1,
+                "personnel_teacher": 8,
+                "personnel_education_staff": 0,
+                "personnel_total": 8
+            }
+        },
+        {
+            "name": "MIS AL-WASHLIYAH PASAR LAPAN",
+            "npsn": "60704006",
+            "nsm": "111212190030",
+            "id": 68828,
+            "statistic_num": "111212190030",
+            "institution_personnel_count": {
+                "institution_id": 68828,
+                "teacher_with_assignment": 11,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 11,
+                "teacher_without_assignment": 0,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 0,
+                "personnel_teacher": 11,
+                "personnel_education_staff": 0,
+                "personnel_total": 11
+            }
+        },
+        {
+            "name": "MIS AL AZZURA 02",
+            "npsn": "69854414",
+            "nsm": "111212190045",
+            "id": 68830,
+            "statistic_num": "111212190045",
+            "institution_personnel_count": {
+                "institution_id": 68830,
+                "teacher_with_assignment": 7,
+                "education_staff_with_assignment": 1,
+                "personnel_with_assignment_total": 8,
+                "teacher_without_assignment": 0,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 0,
+                "personnel_teacher": 7,
+                "personnel_education_staff": 1,
+                "personnel_total": 8
+            }
+        },
+        {
+            "name": "RA BAITUSSALAM",
+            "npsn": "69754635",
+            "nsm": "101212210006",
+            "id": 70250,
+            "statistic_num": "101212210006",
+            "institution_personnel_count": {
+                "institution_id": 70250,
+                "teacher_with_assignment": 3,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 3,
+                "teacher_without_assignment": 0,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 0,
+                "personnel_teacher": 3,
+                "personnel_education_staff": 0,
+                "personnel_total": 3
+            }
+        },
+        {
+            "name": "RA YPAM",
+            "npsn": "69754637",
+            "nsm": "101212210022",
+            "id": 70262,
+            "statistic_num": "101212210022",
+            "institution_personnel_count": {
+                "institution_id": 70262,
+                "teacher_with_assignment": 5,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 5,
+                "teacher_without_assignment": 1,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 1,
+                "personnel_teacher": 6,
+                "personnel_education_staff": 0,
+                "personnel_total": 6
+            }
+        },
+        {
+            "name": "RA NURUL AZMI",
+            "npsn": "69730047",
+            "nsm": "101212210021",
+            "id": 70263,
+            "statistic_num": "101212210021",
+            "institution_personnel_count": {
+                "institution_id": 70263,
+                "teacher_with_assignment": 2,
+                "education_staff_with_assignment": 1,
+                "personnel_with_assignment_total": 3,
+                "teacher_without_assignment": 4,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 4,
+                "personnel_teacher": 6,
+                "personnel_education_staff": 1,
+                "personnel_total": 7
+            }
+        },
+        {
+            "name": "RA AL WASHLIYAH KEDAISIANAM",
+            "npsn": "69897436",
+            "nsm": "101212210020",
+            "id": 70264,
+            "statistic_num": "101212210020",
+            "institution_personnel_count": {
+                "institution_id": 70264,
+                "teacher_with_assignment": 2,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 2,
+                "teacher_without_assignment": 1,
+                "education_staff_without_assignment": 2,
+                "personnel_without_assignment_total": 3,
+                "personnel_teacher": 3,
+                "personnel_education_staff": 2,
+                "personnel_total": 5
+            }
+        },
+        {
+            "name": "RA AL MUNAWWAR",
+            "npsn": "69754366",
+            "nsm": "101212210015",
+            "id": 70268,
+            "statistic_num": "101212210015",
+            "institution_personnel_count": {
+                "institution_id": 70268,
+                "teacher_with_assignment": 2,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 2,
+                "teacher_without_assignment": 4,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 4,
+                "personnel_teacher": 6,
+                "personnel_education_staff": 0,
+                "personnel_total": 6
+            }
+        },
+        {
+            "name": "RA DAAR AL MUHSININ",
+            "npsn": "69730051",
+            "nsm": "101212210014",
+            "id": 70270,
+            "statistic_num": "101212210014",
+            "institution_personnel_count": {
+                "institution_id": 70270,
+                "teacher_with_assignment": 4,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 4,
+                "teacher_without_assignment": 0,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 0,
+                "personnel_teacher": 4,
+                "personnel_education_staff": 0,
+                "personnel_total": 4
+            }
+        },
+        {
+            "name": "RA JAMIATUL HASANAH",
+            "npsn": "69730052",
+            "nsm": "101212210013",
+            "id": 70272,
+            "statistic_num": "101212210013",
+            "institution_personnel_count": {
+                "institution_id": 70272,
+                "teacher_with_assignment": 7,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 7,
+                "teacher_without_assignment": 0,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 0,
+                "personnel_teacher": 7,
+                "personnel_education_staff": 0,
+                "personnel_total": 7
+            }
+        },
+        {
+            "name": "RA SYUHADA",
+            "npsn": "69730040",
+            "nsm": "101212210019",
+            "id": 70275,
+            "statistic_num": "101212210019",
+            "institution_personnel_count": {
+                "institution_id": 70275,
+                "teacher_with_assignment": 0,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 0,
+                "teacher_without_assignment": 7,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 7,
+                "personnel_teacher": 7,
+                "personnel_education_staff": 0,
+                "personnel_total": 7
+            }
+        },
+        {
+            "name": "RA BAITUL QURAN",
+            "npsn": "69897442",
+            "nsm": "101212210018",
+            "id": 70278,
+            "statistic_num": "101212210018",
+            "institution_personnel_count": {
+                "institution_id": 70278,
+                "teacher_with_assignment": 3,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 3,
+                "teacher_without_assignment": 0,
+                "education_staff_without_assignment": 1,
+                "personnel_without_assignment_total": 1,
+                "personnel_teacher": 3,
+                "personnel_education_staff": 1,
+                "personnel_total": 4
+            }
+        },
+        {
+            "name": "RA AL WASHLIYAH",
+            "npsn": "69730048",
+            "nsm": "101212210017",
+            "id": 70281,
+            "statistic_num": "101212210017",
+            "institution_personnel_count": {
+                "institution_id": 70281,
+                "teacher_with_assignment": 2,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 2,
+                "teacher_without_assignment": 1,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 1,
+                "personnel_teacher": 3,
+                "personnel_education_staff": 0,
+                "personnel_total": 3
+            }
+        },
+        {
+            "name": "RA AL KAUTSAR",
+            "npsn": "69754367",
+            "nsm": "101212210016",
+            "id": 70283,
+            "statistic_num": "101212210016",
+            "institution_personnel_count": {
+                "institution_id": 70283,
+                "teacher_with_assignment": 4,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 4,
+                "teacher_without_assignment": 0,
+                "education_staff_without_assignment": 1,
+                "personnel_without_assignment_total": 1,
+                "personnel_teacher": 4,
+                "personnel_education_staff": 1,
+                "personnel_total": 5
+            }
+        },
+        {
+            "name": "RA ISLAM YASKUMAM",
+            "npsn": "69754636",
+            "nsm": "101212210011",
+            "id": 70287,
+            "statistic_num": "101212210011",
+            "institution_personnel_count": {
+                "institution_id": 70287,
+                "teacher_with_assignment": 5,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 5,
+                "teacher_without_assignment": 0,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 0,
+                "personnel_teacher": 5,
+                "personnel_education_staff": 0,
+                "personnel_total": 5
+            }
+        },
+        {
+            "name": "RA NURHASANAH",
+            "npsn": "69754364",
+            "nsm": "101212210009",
+            "id": 70288,
+            "statistic_num": "101212210009",
+            "institution_personnel_count": {
+                "institution_id": 70288,
+                "teacher_with_assignment": 4,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 4,
+                "teacher_without_assignment": 0,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 0,
+                "personnel_teacher": 4,
+                "personnel_education_staff": 0,
+                "personnel_total": 4
+            }
+        },
+        {
+            "name": "RA AL IKHLAS",
+            "npsn": "69730038",
+            "nsm": "101212210004",
+            "id": 70290,
+            "statistic_num": "101212210004",
+            "institution_personnel_count": {
+                "institution_id": 70290,
+                "teacher_with_assignment": 0,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 0,
+                "teacher_without_assignment": 3,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 3,
+                "personnel_teacher": 3,
+                "personnel_education_staff": 0,
+                "personnel_total": 3
+            }
+        },
+        {
+            "name": "RA ANNISAA II",
+            "npsn": "69897438",
+            "nsm": "101212210002",
+            "id": 70293,
+            "statistic_num": "101212210002",
+            "institution_personnel_count": {
+                "institution_id": 70293,
+                "teacher_with_assignment": 1,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 1,
+                "teacher_without_assignment": 1,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 1,
+                "personnel_teacher": 2,
+                "personnel_education_staff": 0,
+                "personnel_total": 2
+            }
+        },
+        {
+            "name": "RA AN-NISAA I",
+            "npsn": "69854494",
+            "nsm": "101212210001",
+            "id": 70295,
+            "statistic_num": "101212210001",
+            "institution_personnel_count": {
+                "institution_id": 70295,
+                "teacher_with_assignment": 0,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 0,
+                "teacher_without_assignment": 3,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 3,
+                "personnel_teacher": 3,
+                "personnel_education_staff": 0,
+                "personnel_total": 3
+            }
+        },
+        {
+            "name": "RA ISLAMIYAH TANJUNG SERI",
+            "npsn": "69730044",
+            "nsm": "101212210008",
+            "id": 70297,
+            "statistic_num": "101212210008",
+            "institution_personnel_count": {
+                "institution_id": 70297,
+                "teacher_with_assignment": 3,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 3,
+                "teacher_without_assignment": 1,
+                "education_staff_without_assignment": 2,
+                "personnel_without_assignment_total": 3,
+                "personnel_teacher": 4,
+                "personnel_education_staff": 2,
+                "personnel_total": 6
+            }
+        },
+        {
+            "name": "RA PESANTREN AL-AZHAR",
+            "npsn": "69897440",
+            "nsm": "101212210007",
+            "id": 70299,
+            "statistic_num": "101212210007",
+            "institution_personnel_count": {
+                "institution_id": 70299,
+                "teacher_with_assignment": 3,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 3,
+                "teacher_without_assignment": 1,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 1,
+                "personnel_teacher": 4,
+                "personnel_education_staff": 0,
+                "personnel_total": 4
+            }
+        },
+        {
+            "name": "RA AL WASHLIYAH",
+            "npsn": "69883720",
+            "nsm": "101212210005",
+            "id": 70302,
+            "statistic_num": "101212210005",
+            "institution_personnel_count": {
+                "institution_id": 70302,
+                "teacher_with_assignment": 3,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 3,
+                "teacher_without_assignment": 1,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 1,
+                "personnel_teacher": 4,
+                "personnel_education_staff": 0,
+                "personnel_total": 4
+            }
+        },
+        {
+            "name": "RA NURUL IKHLAS",
+            "npsn": "69883727",
+            "nsm": "101212210051",
+            "id": 70342,
+            "statistic_num": "101212210051",
+            "institution_personnel_count": {
+                "institution_id": 70342,
+                "teacher_with_assignment": 4,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 4,
+                "teacher_without_assignment": 0,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 0,
+                "personnel_teacher": 4,
+                "personnel_education_staff": 0,
+                "personnel_total": 4
+            }
+        },
+        {
+            "name": "RA AL-FURQON",
+            "npsn": "69897445",
+            "nsm": "101212210050",
+            "id": 70343,
+            "statistic_num": "101212210050",
+            "institution_personnel_count": {
+                "institution_id": 70343,
+                "teacher_with_assignment": 2,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 3,
+                "teacher_without_assignment": 2,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 2,
+                "personnel_teacher": 4,
+                "personnel_education_staff": 0,
+                "personnel_total": 4
+            }
+        },
+        {
+            "name": "RA DARUL ILMI",
+            "npsn": "69957809",
+            "nsm": "101212210055",
+            "id": 70344,
+            "statistic_num": "101212210055",
+            "institution_personnel_count": {
+                "institution_id": 70344,
+                "teacher_with_assignment": 0,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 0,
+                "teacher_without_assignment": 3,
+                "education_staff_without_assignment": 1,
+                "personnel_without_assignment_total": 4,
+                "personnel_teacher": 3,
+                "personnel_education_staff": 1,
+                "personnel_total": 4
+            }
+        },
+        {
+            "name": "RA NUR SAHARA",
+            "npsn": "69957810",
+            "nsm": "101212210054",
+            "id": 70345,
+            "statistic_num": "101212210054",
+            "institution_personnel_count": {
+                "institution_id": 70345,
+                "teacher_with_assignment": 0,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 0,
+                "teacher_without_assignment": 2,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 2,
+                "personnel_teacher": 2,
+                "personnel_education_staff": 0,
+                "personnel_total": 2
+            }
+        },
+        {
+            "name": "RA AL-MUKHLISIN",
+            "npsn": "69957811",
+            "nsm": "101212210053",
+            "id": 70346,
+            "statistic_num": "101212210053",
+            "institution_personnel_count": {
+                "institution_id": 70346,
+                "teacher_with_assignment": 6,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 6,
+                "teacher_without_assignment": 0,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 0,
+                "personnel_teacher": 6,
+                "personnel_education_staff": 0,
+                "personnel_total": 6
+            }
+        },
+        {
+            "name": "RA AN NIDZAAM",
+            "npsn": "69957812",
+            "nsm": "101212210052",
+            "id": 70347,
+            "statistic_num": "101212210052",
+            "institution_personnel_count": {
+                "institution_id": 70347,
+                "teacher_with_assignment": 3,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 3,
+                "teacher_without_assignment": 0,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 0,
+                "personnel_teacher": 3,
+                "personnel_education_staff": 0,
+                "personnel_total": 3
+            }
+        },
+        {
+            "name": "RA DARUNNAJAH",
+            "npsn": "69887381",
+            "nsm": "101212210048",
+            "id": 70358,
+            "statistic_num": "101212210048",
+            "institution_personnel_count": {
+                "institution_id": 70358,
+                "teacher_with_assignment": 6,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 6,
+                "teacher_without_assignment": 0,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 0,
+                "personnel_teacher": 6,
+                "personnel_education_staff": 0,
+                "personnel_total": 6
+            }
+        },
+        {
+            "name": "RA AN NAZIFAH",
+            "npsn": "69897437",
+            "nsm": "101212210047",
+            "id": 70359,
+            "statistic_num": "101212210047",
+            "institution_personnel_count": {
+                "institution_id": 70359,
+                "teacher_with_assignment": 1,
+                "education_staff_with_assignment": 1,
+                "personnel_with_assignment_total": 2,
+                "teacher_without_assignment": 1,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 1,
+                "personnel_teacher": 2,
+                "personnel_education_staff": 1,
+                "personnel_total": 3
+            }
+        },
+        {
+            "name": "RA AS ADI",
+            "npsn": "69897443",
+            "nsm": "101212210046",
+            "id": 70360,
+            "statistic_num": "101212210046",
+            "institution_personnel_count": {
+                "institution_id": 70360,
+                "teacher_with_assignment": 0,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 0,
+                "teacher_without_assignment": 2,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 2,
+                "personnel_teacher": 2,
+                "personnel_education_staff": 0,
+                "personnel_total": 2
+            }
+        },
+        {
+            "name": "RA AL-IKHSAN",
+            "npsn": "69897439",
+            "nsm": "101212210045",
+            "id": 70361,
+            "statistic_num": "101212210045",
+            "institution_personnel_count": {
+                "institution_id": 70361,
+                "teacher_with_assignment": 1,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 1,
+                "teacher_without_assignment": 2,
+                "education_staff_without_assignment": 1,
+                "personnel_without_assignment_total": 3,
+                "personnel_teacher": 3,
+                "personnel_education_staff": 1,
+                "personnel_total": 4
+            }
+        },
+        {
+            "name": "RA WAKAF AL MUKHLISHIN",
+            "npsn": "69897444",
+            "nsm": "101212210040",
+            "id": 70362,
+            "statistic_num": "101212210040",
+            "institution_personnel_count": {
+                "institution_id": 70362,
+                "teacher_with_assignment": 11,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 11,
+                "teacher_without_assignment": 0,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 0,
+                "personnel_teacher": 11,
+                "personnel_education_staff": 0,
+                "personnel_total": 11
+            }
+        },
+        {
+            "name": "RA AL HIKMAH",
+            "npsn": "69897441",
+            "nsm": "101212210044",
+            "id": 70363,
+            "statistic_num": "101212210044",
+            "institution_personnel_count": {
+                "institution_id": 70363,
+                "teacher_with_assignment": 0,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 0,
+                "teacher_without_assignment": 2,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 2,
+                "personnel_teacher": 2,
+                "personnel_education_staff": 0,
+                "personnel_total": 2
+            }
+        },
+        {
+            "name": "RA NURULAINI",
+            "npsn": "69883724",
+            "nsm": "101212210043",
+            "id": 70364,
+            "statistic_num": "101212210043",
+            "institution_personnel_count": {
+                "institution_id": 70364,
+                "teacher_with_assignment": 6,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 6,
+                "teacher_without_assignment": 1,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 1,
+                "personnel_teacher": 7,
+                "personnel_education_staff": 0,
+                "personnel_total": 7
+            }
+        },
+        {
+            "name": "RA FAAIZ",
+            "npsn": "69887380",
+            "nsm": "101212210042",
+            "id": 70365,
+            "statistic_num": "101212210042",
+            "institution_personnel_count": {
+                "institution_id": 70365,
+                "teacher_with_assignment": 1,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 1,
+                "teacher_without_assignment": 2,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 2,
+                "personnel_teacher": 3,
+                "personnel_education_staff": 0,
+                "personnel_total": 3
+            }
+        },
+        {
+            "name": "RA ASH SHAFF KASIH BUNDA",
+            "npsn": "69883726",
+            "nsm": "101212210041",
+            "id": 70366,
+            "statistic_num": "101212210041",
+            "institution_personnel_count": {
+                "institution_id": 70366,
+                "teacher_with_assignment": 3,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 3,
+                "teacher_without_assignment": 1,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 1,
+                "personnel_teacher": 4,
+                "personnel_education_staff": 0,
+                "personnel_total": 4
+            }
+        },
+        {
+            "name": "RA AN NUUR",
+            "npsn": "69883722",
+            "nsm": "101212210036",
+            "id": 70376,
+            "statistic_num": "101212210036",
+            "institution_personnel_count": {
+                "institution_id": 70376,
+                "teacher_with_assignment": 1,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 1,
+                "teacher_without_assignment": 7,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 7,
+                "personnel_teacher": 8,
+                "personnel_education_staff": 0,
+                "personnel_total": 8
+            }
+        },
+        {
+            "name": "RA BINTANG HARAPAN AL MUKHLIISIN",
+            "npsn": "69883719",
+            "nsm": "101212210035",
+            "id": 70377,
+            "statistic_num": "101212210035",
+            "institution_personnel_count": {
+                "institution_id": 70377,
+                "teacher_with_assignment": 0,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 0,
+                "teacher_without_assignment": 1,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 1,
+                "personnel_teacher": 1,
+                "personnel_education_staff": 0,
+                "personnel_total": 1
+            }
+        },
+        {
+            "name": "RA WIRDHATUL AMAL",
+            "npsn": "69883721",
+            "nsm": "101212210034",
+            "id": 70378,
+            "statistic_num": "101212210034",
+            "institution_personnel_count": {
+                "institution_id": 70378,
+                "teacher_with_assignment": 0,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 0,
+                "teacher_without_assignment": 7,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 7,
+                "personnel_teacher": 7,
+                "personnel_education_staff": 0,
+                "personnel_total": 7
+            }
+        },
+        {
+            "name": "RA NURCAHAYA",
+            "npsn": "69883723",
+            "nsm": "101212210038",
+            "id": 70379,
+            "statistic_num": "101212210038",
+            "institution_personnel_count": {
+                "institution_id": 70379,
+                "teacher_with_assignment": 0,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 0,
+                "teacher_without_assignment": 2,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 2,
+                "personnel_teacher": 2,
+                "personnel_education_staff": 0,
+                "personnel_total": 2
+            }
+        },
+        {
+            "name": "RA AL HASANAH",
+            "npsn": "69883725",
+            "nsm": "101212210033",
+            "id": 70381,
+            "statistic_num": "101212210033",
+            "institution_personnel_count": {
+                "institution_id": 70381,
+                "teacher_with_assignment": 3,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 3,
+                "teacher_without_assignment": 0,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 0,
+                "personnel_teacher": 3,
+                "personnel_education_staff": 0,
+                "personnel_total": 3
+            }
+        },
+        {
+            "name": "RA MUGHNI AL FATTAH",
+            "npsn": "69754370",
+            "nsm": "101212210032",
+            "id": 70382,
+            "statistic_num": "101212210032",
+            "institution_personnel_count": {
+                "institution_id": 70382,
+                "teacher_with_assignment": 4,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 4,
+                "teacher_without_assignment": 1,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 1,
+                "personnel_teacher": 5,
+                "personnel_education_staff": 0,
+                "personnel_total": 5
+            }
+        },
+        {
+            "name": "RA UMMU AL-FATIMAH",
+            "npsn": "69754638",
+            "nsm": "101212210031",
+            "id": 70385,
+            "statistic_num": "101212210031",
+            "institution_personnel_count": {
+                "institution_id": 70385,
+                "teacher_with_assignment": 1,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 1,
+                "teacher_without_assignment": 1,
+                "education_staff_without_assignment": 1,
+                "personnel_without_assignment_total": 2,
+                "personnel_teacher": 2,
+                "personnel_education_staff": 1,
+                "personnel_total": 3
+            }
+        },
+        {
+            "name": "RA AISYIYAH SIMODONG",
+            "npsn": "69730045",
+            "nsm": "101212210030",
+            "id": 70386,
+            "statistic_num": "101212210030",
+            "institution_personnel_count": {
+                "institution_id": 70386,
+                "teacher_with_assignment": 2,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 2,
+                "teacher_without_assignment": 0,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 0,
+                "personnel_teacher": 2,
+                "personnel_education_staff": 0,
+                "personnel_total": 2
+            }
+        },
+        {
+            "name": "RA KARTINI",
+            "npsn": "69730043",
+            "nsm": "101212210026",
+            "id": 70400,
+            "statistic_num": "101212210026",
+            "institution_personnel_count": {
+                "institution_id": 70400,
+                "teacher_with_assignment": 3,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 3,
+                "teacher_without_assignment": 1,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 1,
+                "personnel_teacher": 4,
+                "personnel_education_staff": 0,
+                "personnel_total": 4
+            }
+        },
+        {
+            "name": "RA AL MUTTAQIN",
+            "npsn": "69730039",
+            "nsm": "101212210025",
+            "id": 70401,
+            "statistic_num": "101212210025",
+            "institution_personnel_count": {
+                "institution_id": 70401,
+                "teacher_with_assignment": 5,
+                "education_staff_with_assignment": 1,
+                "personnel_with_assignment_total": 6,
+                "teacher_without_assignment": 0,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 0,
+                "personnel_teacher": 5,
+                "personnel_education_staff": 1,
+                "personnel_total": 6
+            }
+        },
+        {
+            "name": "RA NURUL UMMI",
+            "npsn": "69754369",
+            "nsm": "101212210024",
+            "id": 70403,
+            "statistic_num": "101212210024",
+            "institution_personnel_count": {
+                "institution_id": 70403,
+                "teacher_with_assignment": 1,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 1,
+                "teacher_without_assignment": 4,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 4,
+                "personnel_teacher": 5,
+                "personnel_education_staff": 0,
+                "personnel_total": 5
+            }
+        },
+        {
+            "name": "RA AR-RAUDHAH",
+            "npsn": "69754368",
+            "nsm": "101212210023",
+            "id": 70404,
+            "statistic_num": "101212210023",
+            "institution_personnel_count": {
+                "institution_id": 70404,
+                "teacher_with_assignment": 1,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 1,
+                "teacher_without_assignment": 2,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 2,
+                "personnel_teacher": 3,
+                "personnel_education_staff": 0,
+                "personnel_total": 3
+            }
+        },
+        {
+            "name": "RA ISLAMIYAH",
+            "npsn": "69730049",
+            "nsm": "101212210029",
+            "id": 70405,
+            "statistic_num": "101212210029",
+            "institution_personnel_count": {
+                "institution_id": 70405,
+                "teacher_with_assignment": 1,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 1,
+                "teacher_without_assignment": 2,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 2,
+                "personnel_teacher": 3,
+                "personnel_education_staff": 0,
+                "personnel_total": 3
+            }
+        },
+        {
+            "name": "RA AZZURA",
+            "npsn": "69883718",
+            "nsm": "101212210027",
+            "id": 70406,
+            "statistic_num": "101212210027",
+            "institution_personnel_count": {
+                "institution_id": 70406,
+                "teacher_with_assignment": 4,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 4,
+                "teacher_without_assignment": 0,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 1,
+                "personnel_teacher": 4,
+                "personnel_education_staff": 0,
+                "personnel_total": 4
+            }
+        },
+        {
+            "name": "RA AL-ISLAM",
+            "npsn": "69754549",
+            "nsm": "101212210091",
+            "id": 70422,
+            "statistic_num": "101212210091",
+            "institution_personnel_count": {
+                "institution_id": 70422,
+                "teacher_with_assignment": 4,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 4,
+                "teacher_without_assignment": 1,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 1,
+                "personnel_teacher": 5,
+                "personnel_education_staff": 0,
+                "personnel_total": 5
+            }
+        },
+        {
+            "name": "MTSN BATU BARA",
+            "npsn": "10264505",
+            "nsm": "121112210001",
+            "id": 73810,
+            "statistic_num": "121112210001",
+            "institution_personnel_count": {
+                "institution_id": 73810,
+                "teacher_with_assignment": 73,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 73,
+                "teacher_without_assignment": 2,
+                "education_staff_without_assignment": 7,
+                "personnel_without_assignment_total": 9,
+                "personnel_teacher": 75,
+                "personnel_education_staff": 7,
+                "personnel_total": 82
+            }
+        },
+        {
+            "name": "MIN 2 BATU BARA",
+            "npsn": "60704022",
+            "nsm": "111112210002",
+            "id": 78899,
+            "statistic_num": "111112210002",
+            "institution_personnel_count": {
+                "institution_id": 78899,
+                "teacher_with_assignment": 0,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 0,
+                "teacher_without_assignment": 21,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 21,
+                "personnel_teacher": 21,
+                "personnel_education_staff": 0,
+                "personnel_total": 21
+            }
+        },
+        {
+            "name": "MIN 1 BATU BARA",
+            "npsn": "60704008",
+            "nsm": "111112210001",
+            "id": 78901,
+            "statistic_num": "111112210001",
+            "institution_personnel_count": {
+                "institution_id": 78901,
+                "teacher_with_assignment": 15,
+                "education_staff_with_assignment": 3,
+                "personnel_with_assignment_total": 18,
+                "teacher_without_assignment": 3,
+                "education_staff_without_assignment": 1,
+                "personnel_without_assignment_total": 4,
+                "personnel_teacher": 18,
+                "personnel_education_staff": 4,
+                "personnel_total": 22
+            }
+        },
+        {
+            "name": "RA SAKINAH",
+            "npsn": "70014218",
+            "nsm": "101212190056",
+            "id": 83503,
+            "statistic_num": "101212190056",
+            "institution_personnel_count": {
+                "institution_id": 83503,
+                "teacher_with_assignment": 3,
+                "education_staff_with_assignment": 2,
+                "personnel_with_assignment_total": 5,
+                "teacher_without_assignment": 0,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 0,
+                "personnel_teacher": 3,
+                "personnel_education_staff": 2,
+                "personnel_total": 5
+            }
+        },
+        {
+            "name": "MTs SWASTA AL MUTTAQIN",
+            "npsn": "70034024",
+            "nsm": "121212190083",
+            "id": 83540,
+            "statistic_num": "121212190083",
+            "institution_personnel_count": {
+                "institution_id": 83540,
+                "teacher_with_assignment": 11,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 11,
+                "teacher_without_assignment": 0,
+                "education_staff_without_assignment": 3,
+                "personnel_without_assignment_total": 3,
+                "personnel_teacher": 11,
+                "personnel_education_staff": 3,
+                "personnel_total": 14
+            }
+        },
+        {
+            "name": "MTs Syarifah",
+            "npsn": "70034025",
+            "nsm": "121212190082",
+            "id": 83544,
+            "statistic_num": "121212190082",
+            "institution_personnel_count": {
+                "institution_id": 83544,
+                "teacher_with_assignment": 8,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 8,
+                "teacher_without_assignment": 4,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 4,
+                "personnel_teacher": 12,
+                "personnel_education_staff": 0,
+                "personnel_total": 12
+            }
+        },
+        {
+            "name": "MTs DAAR AL MUHSININ",
+            "npsn": "70034027",
+            "nsm": "121212190081",
+            "id": 83710,
+            "statistic_num": "121212190081",
+            "institution_personnel_count": {
+                "institution_id": 83710,
+                "teacher_with_assignment": 7,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 7,
+                "teacher_without_assignment": 2,
+                "education_staff_without_assignment": 1,
+                "personnel_without_assignment_total": 3,
+                "personnel_teacher": 9,
+                "personnel_education_staff": 1,
+                "personnel_total": 10
+            }
+        },
+        {
+            "name": "MTs PESANTREN TAHFIZH AL-IKHLAS PANGKALAN DODEK BARU",
+            "npsn": "70026984",
+            "nsm": "121212190079",
+            "id": 83756,
+            "statistic_num": "121212190079",
+            "institution_personnel_count": {
+                "institution_id": 83756,
+                "teacher_with_assignment": 2,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 2,
+                "teacher_without_assignment": 3,
+                "education_staff_without_assignment": 1,
+                "personnel_without_assignment_total": 4,
+                "personnel_teacher": 5,
+                "personnel_education_staff": 1,
+                "personnel_total": 6
+            }
+        },
+        {
+            "name": "MTs KHOLIJAH MUKHTAR LALANG",
+            "npsn": "70013716",
+            "nsm": "121212190080",
+            "id": 84188,
+            "statistic_num": "121212190080",
+            "institution_personnel_count": {
+                "institution_id": 84188,
+                "teacher_with_assignment": 6,
+                "education_staff_with_assignment": 1,
+                "personnel_with_assignment_total": 10,
+                "teacher_without_assignment": 1,
+                "education_staff_without_assignment": 1,
+                "personnel_without_assignment_total": 2,
+                "personnel_teacher": 7,
+                "personnel_education_staff": 2,
+                "personnel_total": 9
+            }
+        },
+        {
+            "name": "MIS YAYASAN PENDIDIKAN AL-NUR JANNAH TANJUNG MULIA",
+            "npsn": null,
+            "nsm": "111212190057",
+            "id": 84592,
+            "statistic_num": "111212190057",
+            "institution_personnel_count": {
+                "institution_id": 84592,
+                "teacher_with_assignment": 0,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 0,
+                "teacher_without_assignment": 2,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 2,
+                "personnel_teacher": 2,
+                "personnel_education_staff": 0,
+                "personnel_total": 2
+            }
+        },
+        {
+            "name": "MTs ANNISA`",
+            "npsn": "70034030",
+            "nsm": "121212190078",
+            "id": 84595,
+            "statistic_num": "121212190078",
+            "institution_personnel_count": {
+                "institution_id": 84595,
+                "teacher_with_assignment": 2,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 2,
+                "teacher_without_assignment": 7,
+                "education_staff_without_assignment": 2,
+                "personnel_without_assignment_total": 9,
+                "personnel_teacher": 9,
+                "personnel_education_staff": 2,
+                "personnel_total": 11
+            }
+        },
+        {
+            "name": "MTs NAHDLATUL ULAMA",
+            "npsn": "70035625",
+            "nsm": "121212190084",
+            "id": 85221,
+            "statistic_num": "121212190084",
+            "institution_personnel_count": {
+                "institution_id": 85221,
+                "teacher_with_assignment": 0,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 0,
+                "teacher_without_assignment": 8,
+                "education_staff_without_assignment": 1,
+                "personnel_without_assignment_total": 9,
+                "personnel_teacher": 8,
+                "personnel_education_staff": 1,
+                "personnel_total": 9
+            }
+        },
+        {
+            "name": "MTs ISLAMIYAH SENTANG BATU BARA",
+            "npsn": "70034034",
+            "nsm": "121212190085",
+            "id": 85290,
+            "statistic_num": "121212190085",
+            "institution_personnel_count": {
+                "institution_id": 85290,
+                "teacher_with_assignment": 5,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 6,
+                "teacher_without_assignment": 0,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 0,
+                "personnel_teacher": 5,
+                "personnel_education_staff": 0,
+                "personnel_total": 5
+            }
+        },
+        {
+            "name": "MI AL WASHLIYAH DAHARI INDAH",
+            "npsn": "70034307",
+            "nsm": "111212190058",
+            "id": 85608,
+            "statistic_num": "111212190058",
+            "institution_personnel_count": {
+                "institution_id": 85608,
+                "teacher_with_assignment": 5,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 5,
+                "teacher_without_assignment": 0,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 0,
+                "personnel_teacher": 5,
+                "personnel_education_staff": 0,
+                "personnel_total": 5
+            }
+        },
+        {
+            "name": "RA CENDIKIA",
+            "npsn": "70032961",
+            "nsm": "101212190057",
+            "id": 85611,
+            "statistic_num": "101212190057",
+            "institution_personnel_count": {
+                "institution_id": 85611,
+                "teacher_with_assignment": 0,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 0,
+                "teacher_without_assignment": 1,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 1,
+                "personnel_teacher": 1,
+                "personnel_education_staff": 0,
+                "personnel_total": 1
+            }
+        },
+        {
+            "name": "MA ASY-SYAUFI MUNIROH",
+            "npsn": "70034035",
+            "nsm": "131212190037",
+            "id": 85708,
+            "statistic_num": "131212190037",
+            "institution_personnel_count": {
+                "institution_id": 85708,
+                "teacher_with_assignment": 0,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 0,
+                "teacher_without_assignment": 1,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 1,
+                "personnel_teacher": 1,
+                "personnel_education_staff": 0,
+                "personnel_total": 1
+            }
+        },
+        {
+            "name": "RA BAITUL QUR'AN",
+            "npsn": "70029814",
+            "nsm": "101212190058",
+            "id": 85938,
+            "statistic_num": "101212190058",
+            "institution_personnel_count": {
+                "institution_id": 85938,
+                "teacher_with_assignment": 1,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 1,
+                "teacher_without_assignment": 2,
+                "education_staff_without_assignment": 1,
+                "personnel_without_assignment_total": 3,
+                "personnel_teacher": 3,
+                "personnel_education_staff": 1,
+                "personnel_total": 4
+            }
+        },
+        {
+            "name": "RA H. OK. ABDUL DJALIL - HJ. MAHNIA",
+            "npsn": "70043154",
+            "nsm": "101212210093",
+            "id": 432918,
+            "statistic_num": "101212210093",
+            "institution_personnel_count": {
+                "institution_id": 432918,
+                "teacher_with_assignment": 1,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 1,
+                "teacher_without_assignment": 1,
+                "education_staff_without_assignment": 1,
+                "personnel_without_assignment_total": 2,
+                "personnel_teacher": 2,
+                "personnel_education_staff": 1,
+                "personnel_total": 3
+            }
+        },
+        {
+            "name": "MTS Darul Atiq Batu Bara",
+            "npsn": "",
+            "nsm": "121212210133",
+            "id": 453752,
+            "statistic_num": "121212210133",
+            "institution_personnel_count": {
+                "institution_id": 453752,
+                "teacher_with_assignment": 0,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 0,
+                "teacher_without_assignment": 0,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 0,
+                "personnel_teacher": 0,
+                "personnel_education_staff": 0,
+                "personnel_total": 0
+            }
+        },
+        {
+            "name": "MTS HL BERBUDI",
+            "npsn": "",
+            "nsm": "121212210135",
+            "id": 453797,
+            "statistic_num": "121212210135",
+            "institution_personnel_count": {
+                "institution_id": 453797,
+                "teacher_with_assignment": 0,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 0,
+                "teacher_without_assignment": 0,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 0,
+                "personnel_teacher": 0,
+                "personnel_education_staff": 0,
+                "personnel_total": 0
+            }
+        },
+        {
+            "name": "RA AZIRA",
+            "npsn": "",
+            "nsm": "101212210098",
+            "id": 453798,
+            "statistic_num": "101212210098",
+            "institution_personnel_count": {
+                "institution_id": 453798,
+                "teacher_with_assignment": 0,
+                "education_staff_with_assignment": 0,
+                "personnel_with_assignment_total": 0,
+                "teacher_without_assignment": 0,
+                "education_staff_without_assignment": 0,
+                "personnel_without_assignment_total": 0,
+                "personnel_teacher": 0,
+                "personnel_education_staff": 0,
+                "personnel_total": 0
+            }
+        }
+    ]
+}
